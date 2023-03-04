@@ -19,151 +19,366 @@
     <link rel="stylesheet" href="dist/output.css">
 </head>
 
-<body>
+<body class="lg:bg-[#e3e6e6]">
 
     <header>
-        <nav class=" ">
+        <nav>
             <!-- grid -->
-            <div class="bg-black h-40 lg:h-16 px-5 grid grid-cols-12">
+            <div class="bg-black h-28 lg:h-16 px-2 grid grid-cols-12">
                 <!-- logo -->
                 <div class="col-span-6 lg:col-span-1">
                     <div
-                        class="p-[6px] xl:p-3 lg:border-transparent lg:border-[1px] lg:hover:border-white lg:hover:border-[1px]">
-                        <div class="flex justify-start lg:justify-between items-center">
-                            <div class="block lg:hidden">
-                                <button class="text-white text-lg text-[26px]"><i class="fa-solid fa-bars"></i></button>
+                        class="drp_icon relative p-[6px] xl:pt-3 xl:pr-2 lg:border-transparent lg:border-[1px] lg:hover:border-white lg:hover:border-[1px]">
+                        <div class="sm-nav-open flex justify-start lg:justify-between items-center">
+                            <button class="block lg:hidden text-white text-3xl text-[26px]"><i
+                                    class="fa-solid fa-bars"></i></button>
+                            <div class="pt-[5px] lg:py-2 ml-2 lg:m-0">
+                                <img src="../dist/images/Amazon_logo_PNG5.png" alt="" class=" w-24">
                             </div>
-                            <div>
-                                <img src="dist/images/Amazon_logo_PNG5.png" alt="" class="p-1 w-24">
+                        </div>
+
+                        <!-- small-nav side-bar -->
+                        <div id="sm_nav" class=" fixed top-0 -left-[54rem] z-50 w-[20rem] sm:w-[27rem] md:w-[45rem] h-screen overflow-auto bg-white text-black duration-500">
+                            <div class="bg-gray-600 pr-10 pl-3 py-3 h-[135px]">
+                                <div class="sm-nav-close absolute top-0 right-[5px] z-50 ">
+                                    <button class="text-xl"><i class="fa-solid fa-x text-white"></i></button>
+                                </div>
+                                <div class="flex justify-between flex-wrap-reverse">
+                                    <div class="w-full">
+                                        <p class="font-bold text-base text-white">Browse<br><span
+                                                class="font-medium text-2xl text-white">Amazon</span></p>
+                                    </div>
+                                    <div class="flex justify-end items-center w-full">
+                                        <a href="" class="text-white font-medium">sign in</a>
+                                        <a class="text-white"><i class="fa-regular fa-user ml-2 w-[18px]"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="border-b-[5px]">
+                                    <ul class="">
+                                        <li class="px-3 py-4">
+                                            <div class="flex justify-between">
+                                                <a href="" class="font-bold text-xl text-gray-800">Amazon Home</a>
+                                                <span><i class="fa-solid fa-house"></i></span>
+
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="border-b-[5px]">
+                                    <ul>
+                                        <li class="pl-3 py-4">
+                                            <p href="" class="font-bold text-xl text-gray-800">Trending</p>
+                                        </li>
+                                        <li class="pl-3 py-4">
+                                            <p class="font-medium text-base text-gray-800">Movers & Shakers</p>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="border-b-[1px]">
+                                    <ul>
+                                        <li class="pl-3 py-4">
+                                            <p class="font-bold text-xl text-gray-800">Top Departements</p>
+                                        </li>
+                                        <li class="pl-3 py-4"><a href=""
+                                                class="font-medium text-base text-gray-800">Home</a>
+                                        </li>
+                                        <li class="pl-3 py-4"><a href=""
+                                                class="font-medium text-base text-gray-800">Health
+                                                & Household</a>
+                                        </li>
+                                        <li class="pl-3 py-4"><a href=""
+                                                class="font-medium text-base text-gray-800">Books</a>
+                                        </li>
+                                        <li class="drp_icon_1 relative pl-3 pt-4 pb-[72px]"><a href="#"
+                                                class="font-medium text-base text-gray-800">
+                                                See All<i class="fa-solid fa-chevron-down pl-2"></i></a>
+
+                                            <div class="hidden drp_1">
+                                                <ul class="border-t-[1px]">
+                                                    <li class="pr-5 py-4 flex justify-between ">
+                                                        <a href="" class="font-medium text-base text-gray-700">Amazon
+                                                            Music</a>
+                                                        <span class="font-medium text-base text-gray-500"><i
+                                                                class="fa-solid fa-chevron-right"></i></span>
+                                                    </li>
+                                                    <li class="pr-5 py-4 flex justify-between">
+                                                        <a href="" class="font-medium text-base text-gray-700">Prime
+                                                            Video</a>
+                                                        <span class="font-medium text-base text-gray-500"><i
+                                                                class="fa-solid fa-chevron-right"></i></span>
+                                                    </li>
+                                                    <li class="pr-5 py-4 flex justify-between">
+                                                        <a href="" class="font-medium text-base text-gray-700">Books</a>
+                                                        <span class="font-medium text-base text-gray-500"><i
+                                                                class="fa-solid fa-chevron-right"></i></span>
+                                                    </li>
+                                                    <li class="pr-5 py-4 flex justify-between">
+                                                        <a href="" class="font-medium text-base text-gray-700">Echo &
+                                                            Alexa</a>
+                                                        <span class="font-medium text-base text-gray-500"><i
+                                                                class="fa-solid fa-chevron-right"></i></span>
+                                                    </li>
+                                                    <li class="pr-5 py-4 flex justify-between">
+                                                        <a href="" class="font-medium text-base text-gray-700">Fire
+                                                            Tablets</a>
+                                                        <span class="font-medium text-base text-gray-500"><i
+                                                                class="fa-solid fa-chevron-right"></i></span>
+                                                    </li>
+                                                    <li class="pr-5 py-4 flex justify-between">
+                                                        <a href="" class="font-medium text-base text-gray-700">Fire
+                                                            TV</a>
+                                                        <span class="font-medium text-base text-gray-500"><i
+                                                                class="fa-solid fa-chevron-right"></i></span>
+                                                    </li>
+                                                    <li class="pr-5 py-4 flex justify-between">
+                                                        <a href=""
+                                                            class="font-medium text-base text-gray-700">Kindle</a>
+                                                        <span class="font-medium text-base text-gray-500"><i
+                                                                class="fa-solid fa-chevron-right"></i></span>
+                                                    </li>
+                                                    <li class="pr-5 py-4 flex justify-between">
+                                                        <a href="" class="font-medium text-base text-gray-700">Audible
+                                                            Books
+                                                            & Originals</a>
+                                                        <span class="font-medium text-base text-gray-500"><i
+                                                                class="fa-solid fa-chevron-right"></i></span>
+                                                    </li>
+                                                    <li class="pr-5 py-4 flex justify-between">
+                                                        <a href="" class="font-medium text-base text-gray-700">Clothing,
+                                                            Shoes, Jewelry & Watches</a>
+                                                        <span class="font-medium text-base text-gray-500"><i
+                                                                class="fa-solid fa-chevron-right"></i></span>
+                                                    </li>
+                                                    <li class="pr-5 py-4 flex justify-between">
+                                                        <a href=""
+                                                            class="font-medium text-base text-gray-700">Electronic</a>
+                                                        <span class="font-medium text-base text-gray-500"><i
+                                                                class="fa-solid fa-chevron-right"></i></span>
+                                                    </li>
+                                                    <li class="pr-5 py-4 flex justify-between">
+                                                        <a href="" class="font-medium text-base text-gray-700">Office &
+                                                            School Supplies</a>
+                                                        <span class="font-medium text-base text-gray-500"><i
+                                                                class="fa-solid fa-chevron-right"></i></span>
+                                                    </li>
+                                                    <li class="pr-5 flex justify-between">
+                                                        <a href="#" class=" font-medium text-base text-gray-700">See
+                                                            Less</a>
+                                                        <span class="font-medium text-base text-gray-500"><i
+                                                                class="fa-solid fa-chevron-up pl-3"></i></span>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <div
-                    class="hidden lg:block p-[6px] text-center lg:border-transparent lg:border-[1px] lg:hover:border-white lg:hover:border-[1px]">
-                    <a href=""><span class="text-gray-300 text-xs xl:text-sm text-end">Deliver to</span>
-                        <div>
-                            <span class="text-white text-[13px] xl:text-base"><i
-                                    class="fa-solid fa-location-dot pr-2"></i>Pakistan</span>
+                    class="hidden lg:block text-center lg:border-transparent pt-3 pl-2 leading-none border-[1px] lg:hover:border-white lg:hover:border-[1px]">
+                    <a href="">
+                        <div class="flex leading-none">
+                            <div class="flex items-end">
+                                <span class="text-white"><i class="fa-solid fa-location-dot mr-1"></i></span>
+                            </div>
+                            <div class="text-start">
+                                <span class="text-gray-300 text-xs text-end">Deliver to</span>
+                                <span class="text-[13px] text-white font-bold">Pakistan</span>
+                            </div>
                         </div>
                     </a>
                 </div>
                 <!-- search field -->
-                <div class="pt-3 pb-2 order-[9999] col-span-12 lg:-order-none lg:col-span-6">
+                <div class="pt-[9px] pb-2 order-[9999] col-span-12 lg:-order-none lg:col-span-6">
                     <div>
                         <label for="hs-trailing-button-add-on-with-leading-and-trailing" class="sr-only">Label</label>
-                        <div class="flex rounded-md shadow-sm">
-                            <button
-                                class="drp_icon relative lg:inline-flex items-center px-4 min-w-fit rounded-l-md border border-r-0 border-gray-200 bg-gray-100 text-sm text-gray-500 dark:bg-gray-700 dark:border-gray-400 ">
-                                All<i class="fa-solid fa-caret-down ml-2"></i>
-                                <div class="drp hidden absolute left-0 top-10 z-[15] bg-white border-2px border-black">
-                                    <ul class="text-start px-3">
-                                        <li><a href="">All&nbsp;Departement</a></li>
-                                        <li><a href="">Arts&nbsp;&&nbsp;Departement</a></li>
-                                        <li><a href="">Automative</a></li>
-                                        <li><a href="">Baby</a></li>
-                                        <li><a href="">beauty&nbsp;&&nbsp;Personal&nbsp;Care</a></li>
-                                        <li><a href="">Books</a></li>
-                                        <li><a href="">Boys's&nbsp;Fashion</a></li>
-                                        <li><a href="">Computers</a></li>
-                                        <li><a href="">Deals</a></li>
-                                        <li><a href="">Digital&nbsp;Music</a></li>
-                                        <li><a href="">Girl's&nbsp;Fashion</a></li>
-                                        <li><a href="">Health&nbsp;&&nbsp;Household</a></li>
-                                        <li><a href="">Home&nbsp;&&nbsp;Kitchen</a></li>
-                                        <li><a href="">Indutrial&nbsp;&&nbsp;Scientific</a></li>
-                                        <li><a href="">Kindle&nbsp;Store</a></li>
-                                        <li><a href="">Luggage</a></li>
-                                        <li><a href="">Men's&nbsp;Fashion</a></li>
+                        <div class="flex rounded-sm">
+                            <div
+                                class="relative drp_icon hidden lg:inline-flex items-center px-2 min-w-fit rounded-l-md border border-r-0 border-gray-200 bg-gray-100 text-sm text-gray-500 h-11">
+                                <button id="drp_search">All <span><i
+                                            class="fa-solid fa-caret-down ml-1"></i></span></button>
+                                <div class="drp hidden absolute left-0 top-10 z-[15] w-48 bg-white border-[1px]">
+                                    <ul class="text-start p-3 h-[50vh] overflow-auto">
+                                        <li class="py-1"><a href="#" class="drp_menu">All Departement</a></li>
+                                        <li class="py-1"><a href="#" class="drp_menu">Arts & Departement</a></li>
+                                        <li class="py-1"><a href="#" class="drp_menu">Automative</a></li>
+                                        <li class="py-1"><a href="#" class="drp_menu">Baby</a></li>
+                                        <li class="py-1"><a href="#" class="drp_menu">beauty & Personal Care</a></li>
+                                        <li class="py-1"><a href="#" class="drp_menu">Books</a></li>
+                                        <li class="py-1"><a href="#" class="drp_menu">Boys's Fashion</a></li>
+                                        <li class="py-1"><a href="#" class="drp_menu">Computers</a></li>
+                                        <li class="py-1"><a href="#" class="drp_menu">Deals</a></li>
+                                        <li class="py-1"><a href="#" class="drp_menu">Digital Music</a></li>
+                                        <li class="py-1"><a href="#" class="drp_menu">Girl's Fashion</a></li>
+                                        <li class="py-1"><a href="#" class="drp_menu">Health & Household</a></li>
+                                        <li class="py-1"><a href="#" class="drp_menu">Home & Kitchen</a></li>
+                                        <li class="py-1"><a href="#" class="drp_menu">Indutrial & Scientific</a></li>
+                                        <li class="py-1"><a href="#" class="drp_menu">Kindle Store</a></li>
+                                        <li class="py-1"><a href="#" class="drp_menu">Luggage</a></li>
+                                        <li class="py-1"><a href="#" class="drp_menu">Men's Fashion</a></li>
                                     </ul>
-
                                 </div>
-                            </button>
+                            </div>
                             <input type="text" id="hs-trailing-button-add-on-with-leading-and-trailing"
                                 placeholder="Amazon Search" name="hs-trailing-button-add-on-with-leading-and-trailing"
-                                class="py-3 px-4 block w-full border-gray-200 shadow-sm rounded-0 text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
+                                class="py-3 px-4 block w-full border-gray-200 shadow-sm rounded-0 text-sm h-11 rounded-l-[6px] lg:rounded-l-[0px] ">
                             <button type="button"
-                                class="inline-flex flex-shrink-0 justify-center items-center h-[2.875rem] w-[2.875rem] rounded-r-md border lg:border-transparent font-semibold bg-orange-300 text-black text-sm">
+                                class="inline-flex flex-shrink-0 justify-center items-center w-[54px] rounded-r-md border lg:border-transparent font-semibold bg-orange-300 text-black text-sm h-11">
                                 <i class="fa-solid fa-magnifying-glass font-semibold text-xl"></i>
                             </button>
                         </div>
                     </div>
                 </div>
+
                 <!-- navbar right-side links -->
                 <div class=" col-span-6 lg:order-[9999] lg:col-span-4">
                     <div class="flex justify-end lg:justify-evenly items-center">
                         <div
-                            class="hidden lg:block drp_icon relative py-4 px- text-start lg:border-transparent lg:border-[1px] lg:hover:border-white lg:hover:border-[1px]">
-                            <a href="#" class=" text-white text-sm xl:text-base">EN<i
+                            class="hidden lg:block drp_icon_h relative py-4 px-1 text-start lg:border-transparent lg:border-[1px] lg:hover:border-white lg:hover:border-[1px]">
+                            <a href="#" class=" text-white text-sm xl:text-base font-bold">EN<i
                                     class="fa-solid fa-caret-down ml-2"></i>
-                                <div class="drp hidden absolute top-[50px] z-10 bg-white text-black">
-                                    <ul class="px-2 py-3">
-                                        <li class="py-2"><a href="#">Departement</a></li>
-                                        <li class="py-2"><a href="#">Departement</a></li>
-                                        <li class="py-2"><a href="#">Departement</a></li>
-                                        <li class="py-2"><a href="#">Departement</a></li>
-                                    </ul>
-                                </div>
                             </a>
+                            <div
+                                class="drp_h hidden absolute top-[58px] -right-[88px] z-20 w-[216px] pb-4 pt-2 px-[18px] bg-white text-black">
+                                <div
+                                    class="absolute -top-[6px] right-[100px] z-30 w-[10px] h-[10px] rotate-[225deg] bg-white border-[1px] border-gray-600 border-t-0 border-l-0">
+                                </div>
+                                <div class="flex justify-start items-center my-2">
+                                    <p class="text-[13px] mr-2">Change language</p>
+                                    <a href="#"
+                                        class="text-[11px] text-blue-600 hover:text-orange-700 hover:underline">Learn
+                                        more</a>
+                                </div>
+                                <ul class="">
+                                    <li class="flex items-center"><span class="mr-3"><i
+                                                class="fa-regular fa-circle text-sm"></i></span><span
+                                            class=" my-2 pb-3 border-b-[1px] w-full text-sm">English - EN</span></li>
+                                    <li class="py-1"><a href="#"><span class="mr-3"><i
+                                                    class="fa-regular fa-circle text-sm"></i></span><span
+                                                class="text-xs hover:text-orange-500 hover:underline">español -
+                                                ES</span></a></li>
+                                    <li class="py-1"><a href="#"><span class="mr-3"><i
+                                                    class="fa-regular fa-circle text-sm"></i></span><span
+                                                class="text-xs hover:text-orange-500 hover:underline">العربية-
+                                                AR</span></a></li>
+                                    <li class="py-1"><a href="#"><span class="mr-3"><i
+                                                    class="fa-regular fa-circle text-sm"></i></span><span
+                                                class="text-xs hover:text-orange-500 hover:underline">Deutsch -
+                                                DE</span></a></li>
+                                    <li class="py-1"><a href="#"><span class="mr-3"><i
+                                                    class="fa-regular fa-circle text-sm"></i></span><span
+                                                class="text-xs hover:text-orange-500 hover:underline">עברית -
+                                                HE</span></a></li>
+                                    <li class="py-1"><a href="#"><span class="mr-3"><i
+                                                    class="fa-regular fa-circle text-sm"></i></span><span
+                                                class="text-xs hover:text-orange-500 hover:underline">한국어 -
+                                                KO</span></a></li>
+                                    <li class="py-1"><a href="#"><span class="mr-3"><i
+                                                    class="fa-regular fa-circle text-sm"></i></span><span
+                                                class="text-xs hover:text-orange-500 hover:underline">português -
+                                                PT</span></a></li>
+                                    <li class="py-1"><a href="#"><span class="mr-3"><i
+                                                    class="fa-regular fa-circle text-sm"></i></span><span
+                                                class="text-xs hover:text-orange-500 hover:underline">中文 (简体) -
+                                                ZH</span></a></li>
+                                    <li class="py-1"><a href="#"><span class="mr-3"><i
+                                                    class="fa-regular fa-circle text-sm"></i></span><span
+                                                class="text-xs hover:text-orange-500 hover:underline">中文 (繁體) -
+                                                ZH</span></a></li>
+                                </ul>
+                                <div class=" my-3 py-2 border-y-[1px]">
+                                    <div class="flex justify-start items-center pb-[14px]">
+                                        <p class="text-[13px] mr-2">Change currency</p>
+                                        <a href="#"
+                                            class="text-[11px] text-blue-600 hover:text-orange-700 hover:underline">Learn
+                                            more</a>
+                                    </div>
+                                    <div class="flex justify-between items-center text-sm">
+                                        <p>$ - USD - US Dollar</p>
+                                        <a href="#"
+                                            class="text-xs text-blue-600 hover:text-orange-700 hover:underline">Change</a>
+                                    </div>
+                                </div>
+                                <div class="text-sm text-gray-700">
+                                    <p class="text-start pb-2">You are shopping on Amazon.com</p>
+                                    <a href="#"
+                                        class="text-center text-blue-600 hover:text-orange-700 hover:underline">Change
+                                        country/region.</a>
+                                </div>
+                            </div>
                         </div>
                         <div
-                            class="hidden lg:block drp_icon relative p-[6px] xl:p-[10px] text-white lg:border-transparent lg:border-[1px] lg:hover:border-white lg:hover:border-[1px]">
-                            <button class="">
+                            class="hidden lg:block drp_icon_h relative p-[6px] xl:p-[10px] text-white lg:border-transparent leading-none lg:border-[1px] lg:hover:border-white lg:hover:border-[1px]">
+                            <button class="leading-none text-sm">
                                 <p class=" text-gray-50 text-start text-xs font-semibold">Hello,&nbsp;sign&nbsp;in <br>
                                 </p>
-                                <p class="font-semibold text-sm xl:text-base">Account&nbsp;&&nbsp;Lists <i
+                                <p class="font-bold text-sm leading-none xl:text-base">Account&nbsp;&&nbsp;Lists <i
                                         class="fa-solid fa-caret-down"></i></p>
                             </button>
-                            <div class="drp hidden absolute top-[60px] -right-[170px] z-[15] bg-white text-black">
-                                <div class="pt-16 border-b-[1px] text-center">
-                                    <button class="px-24 py-2 bg-orange-300 border-[1px] border-black">Sign in</button>
-                                    <p class="text-sm py-4">New Customer <span class="text-blue-500">Start
+                            <div
+                                class="drp_h hidden absolute top-[65px] -left-[190px] z-20 w-[425px] bg-white text-black rounded border-[1px]">
+                                <div
+                                    class="absolute -top-[6px] right-[100px] z-30 w-[10px] h-[10px] rotate-[225deg] bg-white border-[1px] border-gray-600 border-t-0 border-l-0">
+                                </div>
+                                <div class="pt-5 border-b-[1px] text-center">
+                                    <button
+                                        class="px-16 py-1 text-sm bg-orange-300 border-[1px] border-gray-500 rounded">Sign
+                                        in</button>
+                                    <p class="text-xs py-1">New Customer <span class="text-blue-500">Start
                                             here.</span></p>
                                 </div>
-                                <div class="flex text-start pt-16 pb-8 px-6">
-                                    <div class="pr-8 text-gray-500 w-64">
+                                <div class="flex text-start pt-4 pb-4 px-6">
+                                    <div class="pr-6 pt-6 w-64">
                                         <ul>
-                                            <li><a href="" class="font-bold text-black">Your Lists</a></li>
-                                            <li><a href="">Create a List</a></li>
-                                            <li><a href="">Find&nbsp;a&nbsp;List&nbsp;or&nbsp;Registery</a></li>
+                                            <li><a href="" class="pb-4 font-bold text-black">Your Lists</a></li>
+                                            <li class=""><a href="" class="text-sm text-gray-500">Create a List</a></li>
+                                            <li class=""><a href=""
+                                                    class="text-sm text-gray-500">Find&nbsp;a&nbsp;List&nbsp;or&nbsp;Registery</a>
+                                            </li>
                                         </ul>
                                     </div>
                                     <div class="pr-12 pt-6 pl-6 border-l-2 w-64">
                                         <ul>
-                                            <li><a href="" class="pb-3 font-bold text-black">Your Account</a></li>
+                                            <li><a href="" class="pb-4 font-bold text-black">Your Account</a></li>
                                             <li><a href=""
-                                                    class="pt-2 text-gray-500 hover:underline hover:text-orange-500">Account</a>
+                                                    class=" text-sm text-gray-500 hover:underline hover:text-orange-500">Account</a>
                                             </li>
                                             <li><a href=""
-                                                    class="pt-2 text-gray-500 hover:underline hover:text-orange-500">Orders</a>
+                                                    class=" text-sm text-gray-500 hover:underline hover:text-orange-500">Orders</a>
                                             </li>
                                             <li><a href=""
-                                                    class="pt-2 text-gray-500 hover:underline hover:text-orange-500">Recommendations</a>
+                                                    class=" text-sm text-gray-500 hover:underline hover:text-orange-500">Recommendations</a>
                                             </li>
                                             <li><a href=""
-                                                    class="pt-2 text-gray-500 hover:underline hover:text-orange-500">Browsing&nbsp;History</a>
+                                                    class=" text-sm text-gray-500 hover:underline hover:text-orange-500">Browsing&nbsp;History</a>
                                             </li>
                                             <li><a href=""
-                                                    class="pt-2 text-gray-500 hover:underline hover:text-orange-500">Watchlist</a>
+                                                    class=" text-sm text-gray-500 hover:underline hover:text-orange-500">Watchlist</a>
                                             </li>
                                             <li><a href=""
-                                                    class="pt-2 text-gray-500 hover:underline hover:text-orange-500">Video&nbsp;Purchases&nbsp;and&nbsp;Rental</a>
+                                                    class=" text-sm text-gray-500 hover:underline hover:text-orange-500">Video&nbsp;Purchases&nbsp;and&nbsp;Rental</a>
                                             </li>
                                             <li><a href=""
-                                                    class="pt-2 text-gray-500 hover:underline hover:text-orange-500">Kindle&nbsp;Unlimited</a>
+                                                    class=" text-sm text-gray-500 hover:underline hover:text-orange-500">Kindle&nbsp;Unlimited</a>
                                             </li>
                                             <li><a href=""
-                                                    class="pt-2 text-gray-500 hover:underline hover:text-orange-500">Content&nbsp;and&nbsp;Devices</a>
+                                                    class=" text-sm text-gray-500 hover:underline hover:text-orange-500">Content&nbsp;and&nbsp;Devices</a>
                                             </li>
                                             <li><a href=""
-                                                    class="pt-2 text-gray-500 hover:underline hover:text-orange-500">Subscribe&nbsp;and&nbsp;save&nbsp;Items</a>
+                                                    class=" text-sm text-gray-500 hover:underline hover:text-orange-500">Subscribe&nbsp;and&nbsp;save&nbsp;Items</a>
                                             </li>
                                             <li><a href=""
-                                                    class="pt-2 text-gray-500 hover:underline hover:text-orange-500">Membership&nbsp;and&nbsp;subscriptions</a>
+                                                    class=" text-sm text-gray-500 hover:underline hover:text-orange-500">Membership&nbsp;and&nbsp;subscriptions</a>
                                             </li>
                                             <li><a href=""
-                                                    class="pt-2 text-gray-500 hover:underline hover:text-orange-500">Music&nbsp;Library</a>
+                                                    class=" text-sm text-gray-500 hover:underline hover:text-orange-500">Music&nbsp;Library</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -172,140 +387,168 @@
                             </div>
                         </div>
                         <div
-                            class="hidden lg:block p-2 text-white lg:border-transparent lg:border-[1px] lg:hover:border-white lg:hover:border-[1px]">
-                            <a href="">
+                            class="hidden lg:block p-2 text-white lg:border-transparent lg:border-[1px] leading-none lg:hover:border-white lg:hover:border-[1px]">
+                            <a href="" class="text-sm">
                                 <span class="text-gray-50 text-xs font-semibold">Returns<br></span>
-                                <span class="font-semibold text-sm xl:text-base">&&nbsp;Orders</span>
+                                <span class="font-bold text-sm xl:text-base">&&nbsp;Orders</span>
                             </a>
                         </div>
                         <div
                             class="block lg:hidden p-[6px] xl:p-3 relative lg:border-transparent lg:border-[1px] lg:hover:border-white lg:hover:border-[1px]">
-                            <a href="" class="text-white font-semibold">Sign in<i
-                                    class="fa-solid fa-angle-right"></i></a>
+                            <a href="" class="text-gray-200 text-sm font-semibold">Sign in<i
+                                    class="fa-solid fa-angle-right text-[10px] ml-1"></i></a>
                         </div>
                         <div
                             class="block lg:hidden p-[6px] xl:p-3 relative lg:border-transparent lg:border-[1px] lg:hover:border-white lg:hover:border-[1px]">
-                            <button class="text-white"><i class="fa-regular fa-user w-[34px] h-[34px]"></i>
+                            <button class="text-white"><i class="fa-regular fa-user text-3xl"></i>
                             </button>
                         </div>
                         <div
-                            class="p-[6px] xl:p-3 relative lg:border-transparent lg:border-[1px] lg:hover:border-white lg:hover:border-[1px]">
-                            <button class="text-white"><i
-                                    class="fa-solid fa-cart-shopping w-[34px] h-[34px] xl:w-[68px] xl:h-[35px] "></i>
+                            class="xl:pt-3 relative lg:border-transparent lg:border-[1px] lg:hover:border-white lg:hover:border-[1px]">
+                            <button class="text-white p-[6px]"><i class="fa-solid fa-cart-shopping text-[32px] "></i>
                                 <span
-                                    class="absolute top-[1px] left-5 text-xl text-orange-400 font-bold">0</span></button>
+                                    class="absolute top-[1px] left-[21px] text-xl text-orange-400 font-bold">0</span></button>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- navbar second row options -->
-            <div class="bg-gray-700 lg:bg-gray-800 h-12 px-5">
-                <div class="hidden lg:flex justify-between items-center">
+            <div class="bg-gray-700 lg:bg-gray-800 h-[38px] px-2">
+                <div class="hidden lg:flex justify-between items-center h-[38px]">
                     <div>
-                        <ul class="flex text-white">
+                        <ul class="flex text-white h-[38px]">
                             <li
-                                class="p-[6px] drp_icon relative xl:p-3 lg:border-transparent lg:border-[1px] lg:hover:border-white lg:hover:border-[1px]">
-                                <a href="#"><i class="fa-solid fa-bars"></i> All</a>
-
-                                <div class="drp hidden absolute top-[-60px] -left-5 z-10 w-[350px] bg-white text-black">
-                                    <div class="drp_icon relative bg-gray-600 flex justify-evenly pr-10 pl-3 py-3">
-                                        <button class="drp absolute top-[14px] -right-[35px]"><i
-                                                class="fa-solid fa-x fa-2xl text-black"></i></button>
+                                class="py-[6px] px-[6px] xl:px-3 xl:py-[6px] drp_icon relative lg:border-transparent lg:border-[1px] lg:hover:border-white lg:hover:border-[1px]">
+                                <a href="#" class="btn-open font-medium text-[15px]"><i
+                                        class="fa-solid fa-bars text-[15px]"></i> All</a>
+                                        <!-- navbar second row sidebar -->
+                                        <!-- <div class="drp  fixed -top-[66px] bottom-0 z-[45] w-[1178px] h-[1100px] bg-gray-800 opacity-50">
+                                        </div> -->
+                                <div id="cross"
+                                    class=" fixed top-0 -left-[30rem] z-50 w-[380px] h-screen bg-white text-black duration-500">
+                                    <button class="btn-close absolute top-[52px] -right-[100px] z-40"><i
+                                            class="fa-solid fa-x fa-2xl text-white"></i></button>
+                                    <div class=" bg-gray-600 flex justify-evenly pr-10 pl-3 py-3">
                                         <span
                                             class="w-8 h-8 text-start bg-white rounded-full flex justify-center items-center"><i
                                                 class=" fa-solid fa-user-tie text-gray-600"></i></span>
-                                        <p class="font-bold text-2xl text-white">Hello, sign in</p>
+                                        <p class="font-bold text-xl text-white">Hello, sign in</p>
                                     </div>
-                                    <div class="border-b-[1px]">
-                                        <p class="text-xl font-semibold pl-3 py-4">Digital Content & Devices</p>
-                                        <ul>
-                                            <li class="pl-3 py-4">
-                                                <a href="">
-                                                    <span>Amazon Music</span>
-                                                    <i class="fa-solid fa-chevron-right"></i>
-                                                </a>
-                                            </li>
-                                            <li class="pl-3 py-4"><a href="">
-                                                    Kindle E-readers & Books<i
-                                                        class="fa-solid fa-chevron-right"></i></a></li>
-                                            <li class="pl-3 py-4"><a href="">
-                                                    Amazon Appstore<i class="fa-solid fa-chevron-right"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="border-b-[1px]">
-                                        <p class="text-xl font-semibold pl-3 py-4">Shop By Department</p>
-                                        <ul>
-                                            <li class="pl-3 py-4"><a href="">
-                                                    Electronic<i class="fa-solid fa-chevron-right"></i></a></li>
-                                            <li class="pl-3 py-4"><a href="">
-                                                    Computers<i class="fa-solid fa-chevron-right"></i></a></li>
-                                            <li class="pl-3 py-4"><a href="">
-                                                    Smart Home<i class="fa-solid fa-chevron-right"></i></a></li>
-                                            <li class="pl-3 py-4"><a href="">
-                                                    Art & Crafts<i class="fa-solid fa-chevron-right"></i></a></li>
-                                            <li class="pl-3 py-4"><a href="">
-                                                    See All<i class="fa-solid fa-chevron-right"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="border-b-[1px]">
-                                        <p class="text-xl font-semibold pl-3 py-4">Programs & Features</p>
-                                        <ul>
-                                            <li class="pl-3 py-4"><a href="">
-                                                    Gift Cards<i class="fa-solid fa-chevron-right"></i></a></li>
-                                            <li class="pl-3 py-4"><a href="">
-                                                    #FoundItOnAmazon<i class="fa-solid fa-chevron-right"></i></a></li>
-                                            <li class="pl-3 py-4"><a href="">
-                                                    Amazon Live<i class="fa-solid fa-chevron-right"></i></a></li>
-                                            <li class="pl-3 py-4"><a href="">
-                                                    International Shopping<i class="fa-solid fa-chevron-right"></i></a>
-                                            </li>
-                                            <li class="pl-3 py-4"><a href="">
-                                                    See All<i class="fa-solid fa-chevron-right"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <div>
-                                        <p class="text-xl font-semibold pl-3 py-4">Help & Settings</p>
-                                        <ul>
-                                            <li class="pl-3 py-4"><a href="">your account</a></li>
-                                            <li class="pl-3 py-4"><a href=""><i
-                                                        class="fa-solid fa-globe"></i>English</a></li>
-                                            <li class="pl-3 py-4"><a href="">United States</a></li>
-                                            <li class="pl-3 py-4"><a href="">Customer Service</a></li>
-                                            <li class="pl-3 py-4"><a href="">Sign in</a></li>
-                                        </ul>
+                                    <div class="px-5 h-screen overflow-auto">
+                                        <div class="border-b-[1px]">
+                                            <p class="text-xl font-semibold pl-3 py-4">Digital Content & Devices</p>
+                                            <ul>
+                                                <li class="flex justify-between px-3 py-4">
+                                                    <a href="#">Amazon Music</a>
+                                                    <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                                                </li>
+                                                <li class="flex justify-between px-3 py-4">
+                                                    <a href="">Kindle E-readers & Books</a>
+                                                    <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                                                </li>
+                                                <li class="flex justify-between px-3 py-4">
+                                                    <a href="">Amazon Appstore</a>
+                                                    <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="border-b-[1px]">
+                                            <p class="text-xl font-semibold px-3 py-4">Shop By Department</p>
+                                            <ul>
+                                                <li class="flex justify-between px-3 py-4">
+                                                    <a href="">Electronic</a>
+                                                    <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                                                </li>
+                                                <li class="flex justify-between px-3 py-4">
+                                                    <a href="">Computers</a>
+                                                    <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                                                </li>
+                                                <li class="flex justify-between px-3 py-4">
+                                                    <a href="">Smart Home</a>
+                                                    <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                                                </li>
+                                                <li class="flex justify-between px-3 py-4">
+                                                    <a href="">Art & Crafts</a>
+                                                    <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                                                </li>
+                                                <li class="flex justify-between px-3 py-4">
+                                                    <a href="">See All</a>
+                                                    <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="border-b-[1px]">
+                                            <p class="text-xl font-semibold px-3 py-4">Programs & Features</p>
+                                            <ul>
+                                                <li class="flex justify-between px-3 py-4">
+                                                    <a href="">Gift Cards</a>
+                                                    <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                                                </li>
+                                                <li class="flex justify-between px-3 py-4">
+                                                    <a href="">#FoundItOnAmazon</a>
+                                                    <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                                                </li>
+                                                <li class="flex justify-between px-3 py-4">
+                                                    <a href="">Amazon Live</a>
+                                                    <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                                                </li>
+                                                <li class="flex justify-between px-3 py-4">
+                                                    <a href="">International Shopping</a>
+                                                    <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                                                </li>
+                                                <li class="flex justify-between px-3 py-4"><a href="">See All</a>
+                                                    <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <p class="text-xl font-semibold px-3 py-4">Help & Settings</p>
+                                            <ul>
+                                                <li class="flex justify-between px-3 py-4"><a href="">your account</a>
+                                                </li>
+                                                <li class="flex justify-between px-3 py-4"><a href=""><i
+                                                            class="fa-solid fa-globe"></i>English</a></li>
+                                                <li class="flex justify-between px-3 py-4"><a href="">United States</a>
+                                                </li>
+                                                <li class="flex justify-between px-3 py-4"><a href="">Customer
+                                                        Service</a>
+                                                </li>
+                                                <li class="flex justify-between px-3 py-4"><a href="">Sign in</a></li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </li>
                             <li
-                                class="p-[6px] xl:p-3 lg:border-transparent lg:border-[1px] lg:hover:border-white lg:hover:border-[1px]">
-                                <a href="">Today's Deals</a>
+                                class="py-[6px] px-[6px] xl:px-3 xl:py-[6px] xl:p-3 lg:border-transparent lg:border-[1px] lg:hover:border-white lg:hover:border-[1px]">
+                                <a href="" class="font-medium text-sm">Today's Deals</a>
                             </li>
                             <li
-                                class="p-[6px] xl:p-3 lg:border-transparent lg:border-[1px] lg:hover:border-white lg:hover:border-[1px]">
-                                <a href="">Customer Service</a>
+                                class="py-[6px] px-[6px] xl:px-3 xl:py-[6px] xl:p-3 lg:border-transparent lg:border-[1px] lg:hover:border-white lg:hover:border-[1px]">
+                                <a href="" class="font-medium text-sm">Customer Service</a>
                             </li>
                             <li
-                                class="p-[6px] xl:p-3 lg:border-transparent lg:border-[1px] lg:hover:border-white lg:hover:border-[1px]">
-                                <a href="">Registry</a>
+                                class="py-[6px] px-[6px] xl:px-3 xl:py-[6px] xl:p-3 lg:border-transparent lg:border-[1px] lg:hover:border-white lg:hover:border-[1px]">
+                                <a href="" class="font-medium text-sm">Registry</a>
                             </li>
                             <li
-                                class="p-[6px] xl:p-3 lg:border-transparent lg:border-[1px] lg:hover:border-white lg:hover:border-[1px]">
-                                <a href="">Gift Cards</a>
+                                class="py-[6px] px-[6px] xl:px-3 xl:py-[6px] xl:p-3 lg:border-transparent lg:border-[1px] lg:hover:border-white lg:hover:border-[1px]">
+                                <a href="" class="font-medium text-sm">Gift Cards</a>
                             </li>
                             <li
-                                class="p-[6px] xl:p-3 lg:border-transparent lg:border-[1px] lg:hover:border-white lg:hover:border-[1px]">
-                                <a href="">Sell</a>
+                                class="py-[6px] px-[6px] xl:px-3 xl:py-[6px] xl:p-3 lg:border-transparent lg:border-[1px] lg:hover:border-white lg:hover:border-[1px]">
+                                <a href="" class="font-medium text-sm">Sell</a>
                             </li>
                         </ul>
                     </div>
                     <div>
                         <a href=""
-                            class="p-[6px] xl:p-3 text-white lg:border-transparent lg:border-[1px] lg:hover:border-white lg:hover:border-[1px]">Shop&nbsp;great&nbsp;deals&nbsp;now</a>
+                            class="py-[6px] px-[6px] xl:px-3 xl:py-[6px] xl:p-3 text-white text-sm font-medium lg:border-transparent lg:border-[1px] lg:hover:border-white lg:hover:border-[1px]">Shop&nbsp;great&nbsp;deals&nbsp;now</a>
                     </div>
                 </div>
 
                 <!-- first carousel >>  -->
-                <div class="block lg:hidden bg-gray-800 px-5 py-3">
+                <div class="block lg:hidden bg-gray-700 px-5 py-3">
                     <div class="owl-nav1 owl-carousel owl-theme">
                         <div class="item active">
                             <a href="" class="text-white text-sm font-medium">Deals</a>
@@ -358,28 +601,30 @@
         </nav>
 
         <!-- nav section : carousel -->
-        <section class="relative bg-[#e3e6e6] h-[1125px]">
-            <div class="hidden lg:block relative">
-                <!-- carousel next button -->
-                <button
-                    class="btn_next absolute top-[2px] right-0 z-10 h-2/4 p-6 border-[1px] border-transparent br-black"><i
-                        class="fa-solid fa-chevron-right text-7xl"></i></button>
-                <!-- carousel after 992px -->
-                <div class="owl1 owl-carousel owl-theme">
-                    <div class="item active">
-                        <img src="dist/images/nav_1.jpg" alt="" width="100%">
+        <section class="relative lg:h-[1555px] xl:h-[1125px] max-w1440">
+            <div class="hidden lg:block ">
+                <div class=" mx-auto relative">
+                    <!-- carousel next button -->
+                    <button
+                        class="btn_next absolute top-[2px] right-0 z-10 h-2/4 p-6 border-[1px] border-transparent br-black">
+                        <img src="/dist/images/chevron/right-chevron.png" alt="" class="w-10"></button>
+                    <!-- carousel after 992px -->
+                    <div class="owl1 owl-carousel owl-theme">
+                        <div class="item active">
+                            <img src="dist/images/nav_1.jpg" alt="" width="100%">
+                        </div>
+                        <div class="item">
+                            <img src="dist/images/nav_2.jpg" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="dist/images/nav_3.jpg" alt="">
+                        </div>
                     </div>
-                    <div class="item">
-                        <img src="dist/images/nav_2.jpg" alt="">
-                    </div>
-                    <div class="item">
-                        <img src="dist/images/nav_3.jpg" alt="">
-                    </div>
+                    <!-- carousel prev button -->
+                    <button
+                        class="btn_prev absolute top-[2px] left-[2px] z-10 h-2/4 p-6 border-[1px] border-transparent  br-black">
+                        <img src="/dist/images/chevron/left-chevron.png" alt="" class="w-10"></button>
                 </div>
-                <!-- carousel prev button -->
-                <button
-                    class="btn_prev absolute top-[2px] left-[2px] z-10 h-2/4 p-6 border-[1px] border-transparent  br-black"><i
-                        class="fa-solid fa-chevron-left text-7xl"></i></button>
             </div>
             <!--  carousel before 992px -->
             <div class="block lg:hidden">
@@ -403,12 +648,12 @@
             </div>
 
             <!-- cards under carousel -->
-            <div class="hidden lg:block absolute top-[245px] left-0 right-0 z-10">
-                <div class=" mx-6">
+            <div class="hidden lg:block absolute top-[245px] left-0 right-0 z-10 ">
+                <div class="mx-5">
                     <div class="grid grid-cols-12 gap-6">
                         <div class="lg:col-span-4 xl:col-span-3 bg-white h-full">
                             <div class="px-4">
-                                <h3 class="text-xl font-semibold p-3">Gaming accessories</h3>
+                                <p class="text-xl font-semibold p-3">Gaming accessories</p>
                                 <div class="h-[293px]">
                                     <div class="flex items-center h-[147px]">
                                         <div>
@@ -444,7 +689,7 @@
                         </div>
                         <div class="lg:col-span-4 xl:col-span-3 bg-white h-full">
                             <div class="px-4">
-                                <h3 class="text-xl font-semibold p-3">Health & Personal Care</h3>
+                                <p class="text-xl font-semibold p-3">Health & Personal Care</p>
                                 <div class="flex items-center">
                                     <div>
                                         <a href="#"><img
@@ -461,7 +706,7 @@
                         </div>
                         <div class="lg:col-span-4 xl:col-span-3 bg-white h-full">
                             <div class="px-4">
-                                <h3 class="text-xl font-semibold p-3">Get fit at home</h3>
+                                <p class="text-xl font-semibold p-3">Get fit at home</p>
                                 <div class="flex items-center">
                                     <div>
                                         <a href="#"><img
@@ -478,7 +723,7 @@
                         </div>
                         <div class="lg:col-span-4 xl:col-span-3 h-full">
                             <div class="p-4 bg-white ">
-                                <h3 class="text-2xl font-semibold pb-3 px-3">Sign in for the best experience</h3>
+                                <p class="text-2xl font-semibold pb-3 px-3">Sign in for the best experience</p>
                                 <div>
                                     <button class=" bg-yellow-400 rounded-md w-full h-[30px]">Sign in securely</button>
                                 </div>
@@ -493,7 +738,7 @@
                         </div>
                         <div class="lg:col-span-4 xl:col-span-3 bg-white h-full">
                             <div class="px-4">
-                                <h3 class="text-xl font-semibold p-3">Electronics</h3>
+                                <p class="text-xl font-semibold p-3">Electronics</p>
                                 <div class="flex items-center">
                                     <div>
                                         <a href="#"><img
@@ -510,7 +755,7 @@
                         </div>
                         <div class="lg:col-span-4 xl:col-span-3 bg-white h-full">
                             <div class="px-4">
-                                <h3 class="text-xl font-semibold p-3">Dresses</h3>
+                                <p class="text-xl font-semibold p-3">Dresses</p>
                                 <div class="flex items-center">
                                     <div>
                                         <a href="#"><img src="dist/images/Fuji_dash_dress_1X._SY304_CB626369146_.jpg"
@@ -526,7 +771,7 @@
                         </div>
                         <div class="lg:col-span-4 xl:col-span-3 bg-white h-full">
                             <div class="px-4">
-                                <h3 class="text-xl font-semibold p-3">Shop by Category</h3>
+                                <p class="text-xl font-semibold p-3">Shop by Category</p>
                                 <div class="h-[293px]">
                                     <div class="flex justify-around items-center h-[147px] bg-[rgba(0,164,180,.05)]">
                                         <div class="text-center ">
@@ -560,7 +805,7 @@
                         </div>
                         <div class="lg:col-span-4 xl:col-span-3 bg-white h-full">
                             <div class="px-4">
-                                <h3 class="text-xl font-semibold p-3">Easy returns</h3>
+                                <p class="text-xl font-semibold p-3">Easy returns</p>
                                 <div class="flex items-center">
                                     <div>
                                         <a href="#"><img src="dist/images/Fuji_Dash_Returns_1x._SY304_CB432774714_.jpg"
@@ -577,262 +822,263 @@
                     </div>
                 </div>
             </div>
-
         </section>
     </header>
 
     <!-- section no. 1 : carousel : Top Sellers in Books for you -->
-    <section class="hidden lg:block bg-[#e3e6e6] px-6 py-4">
-        <div class="bg-white py-3">
-            <div class="container mx-auto relative">
-                <h3 class="text-3xl font-bold py-3">Top Sellers in Books for you</h3>
-                <!-- carousel next button -->
-                <button class="btn_next1 absolute top-[92px] right-0 z-10 py-11 px-6 bg-slate-50 opacity-50 br-black"><i
-                        class="fa-solid fa-chevron-right text-3xl"></i></button>
-                <div class="owl3 owl-carousel owl-theme">
-                    <div class="item active">
-                        <div>
-                            <img src="dist/images/nov_1.jpg" alt="" class="h-[200px]">
+    <section class="hidden lg:block py-4 mx-4 max-w1400">
+        <div class="relative p-5 bg-white">
+            <div class="py-3 grid grid-cols-12">
+                <div class="col-span-12">
+                    <p class="text-3xl font-semibold py-3">Top Sellers in Books for you</p>
+                    <!-- carousel next button -->
+                    <button
+                        class="btn_next1 absolute top-[122px] right-0 z-10 py-11 px-4 bg-slate-50 opacity-50 hover:opacity-70 hover:text-gray-900"><i
+                            class="fa-solid fa-chevron-right text-3xl"></i></button>
+                    <div class="owl3 owl-carousel owl-theme">
+                        <div class="item active">
+                            <div>
+                                <img src="dist/images/nov_1.jpg" alt="" class="h-[200px]">
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/nov_2.jpg" alt="" class="h-[200px]">
+                        <div class="item">
+                            <div>
+                                <img src="dist/images/nov_2.jpg" alt="" class="h-[200px]">
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/nov_3.jpg" alt="" class="h-[200px]">
+                        <div class="item">
+                            <div>
+                                <img src="dist/images/nov_3.jpg" alt="" class="h-[200px]">
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/nov_4.jpg" alt="" class="h-[200px]">
+                        <div class="item">
+                            <div>
+                                <img src="dist/images/nov_4.jpg" alt="" class="h-[200px]">
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/nov_5.jpg" alt="" class="h-[200px]">
+                        <div class="item">
+                            <div>
+                                <img src="dist/images/nov_5.jpg" alt="" class="h-[200px]">
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/nov_7.jpg" alt="" class="h-[200px]">
+                        <div class="item">
+                            <div>
+                                <img src="dist/images/nov_7.jpg" alt="" class="h-[200px]">
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/nov_8.jpg" alt="" class="h-[200px]">
+                        <div class="item">
+                            <div>
+                                <img src="dist/images/nov_8.jpg" alt="" class="h-[200px]">
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/nov_9.jpg" alt="" class="h-[200px]">
+                        <div class="item">
+                            <div>
+                                <img src="dist/images/nov_9.jpg" alt="" class="h-[200px]">
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/nov_10.jpg" alt="" class="h-[200px]">
+                        <div class="item">
+                            <div>
+                                <img src="dist/images/nov_10.jpg" alt="" class="h-[200px]">
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/nov_11.jpg" alt="" class="h-[200px]">
+                        <div class="item">
+                            <div>
+                                <img src="dist/images/nov_11.jpg" alt="" class="h-[200px]">
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/nov_12.jpg" alt="" class="h-[200px]">
+                        <div class="item">
+                            <div>
+                                <img src="dist/images/nov_12.jpg" alt="" class="h-[200px]">
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/nov_13.jpg" alt="" class="h-[200px]">
+                        <div class="item">
+                            <div>
+                                <img src="dist/images/nov_13.jpg" alt="" class="h-[200px]">
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/nov_14.jpg" alt="" class="h-[200px]">
+                        <div class="item">
+                            <div>
+                                <img src="dist/images/nov_14.jpg" alt="" class="h-[200px]">
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/nov_15.jpg" alt="" class="h-[200px]">
+                        <div class="item">
+                            <div>
+                                <img src="dist/images/nov_15.jpg" alt="" class="h-[200px]">
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/nov_16.jpg" alt="" class="h-[200px]">
+                        <div class="item">
+                            <div>
+                                <img src="dist/images/nov_16.jpg" alt="" class="h-[200px]">
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/nov_17.jpg" alt="" class="h-[200px]">
+                        <div class="item">
+                            <div>
+                                <img src="dist/images/nov_17.jpg" alt="" class="h-[200px]">
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/nov_18.jpg" alt="" class="h-[200px]">
+                        <div class="item">
+                            <div>
+                                <img src="dist/images/nov_18.jpg" alt="" class="h-[200px]">
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/nov_19.jpg" alt="" class="h-[200px]">
+                        <div class="item">
+                            <div>
+                                <img src="dist/images/nov_19.jpg" alt="" class="h-[200px]">
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/nov_20.jpg" alt="" class="h-[200px]">
+                        <div class="item">
+                            <div>
+                                <img src="dist/images/nov_20.jpg" alt="" class="h-[200px]">
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/nov_21.jpg" alt="" class="h-[200px]">
+                        <div class="item">
+                            <div>
+                                <img src="dist/images/nov_21.jpg" alt="" class="h-[200px]">
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/nov_22.jpg" alt="" class="h-[200px]">
+                        <div class="item">
+                            <div>
+                                <img src="dist/images/nov_22.jpg" alt="" class="h-[200px]">
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/nov_23.jpg" alt="" class="h-[200px]">
+                        <div class="item">
+                            <div>
+                                <img src="dist/images/nov_23.jpg" alt="" class="h-[200px]">
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/nov_24.jpg" alt="" class="h-[200px]">
+                        <div class="item">
+                            <div>
+                                <img src="dist/images/nov_24.jpg" alt="" class="h-[200px]">
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/nov_25.jpg" alt="" class="h-[200px]">
+                        <div class="item">
+                            <div>
+                                <img src="dist/images/nov_25.jpg" alt="" class="h-[200px]">
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/nov_26.jpg" alt="" class="h-[200px]">
+                        <div class="item">
+                            <div>
+                                <img src="dist/images/nov_26.jpg" alt="" class="h-[200px]">
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/nov_27.jpg" alt="" class="h-[200px]">
+                        <div class="item">
+                            <div>
+                                <img src="dist/images/nov_27.jpg" alt="" class="h-[200px]">
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/nov_28.jpg" alt="" class="h-[200px]">
+                        <div class="item">
+                            <div>
+                                <img src="dist/images/nov_28.jpg" alt="" class="h-[200px]">
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/nov_29.jpg" alt="" class="h-[200px]">
+                        <div class="item">
+                            <div>
+                                <img src="dist/images/nov_29.jpg" alt="" class="h-[200px]">
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/nov_30.jpg" alt="" class="h-[200px]">
+                        <div class="item">
+                            <div>
+                                <img src="dist/images/nov_30.jpg" alt="" class="h-[200px]">
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/nov_32.jpg" alt="" class="h-[200px]">
+                        <div class="item">
+                            <div>
+                                <img src="dist/images/nov_32.jpg" alt="" class="h-[200px]">
+                            </div>
                         </div>
-                    </div>
 
+                    </div>
+                    <!-- carousel prev button -->
+                    <button
+                        class="btn_prev1 absolute top-[122px] left-0 z-10 py-11 px-4 bg-slate-50 opacity-50  hover:opacity-70 hover:text-gray-900"><i
+                            class="fa-solid fa-chevron-left text-3xl text-gray-800 hover:text-black"></i></button>
                 </div>
-                <!-- carousel prev button -->
-                <button class="btn_prev1 absolute top-[92px] left-0 z-10 py-11 px-6 bg-slate-50 opacity-50  br-black"><i
-                        class="fa-solid fa-chevron-left text-3xl text-gray-800 hover:text-black"></i></button>
             </div>
         </div>
     </section>
 
     <!-- section no. 2 :  carousel : Popular items this season -->
-    <section class="hidden lg:block bg-[#e3e6e6] px-6 py-4">
-        <div class="bg-white py-3">
-            <div class="container mx-auto relative">
-                <h3 class="text-2xl font-bold py-4">Popular items this season</h3>
-                <!-- carousel next button -->
-                <button
-                    class="btn_next2 absolute top-[92px] -right-[25px] z-10 py-11 px-6 bg-slate-50 opacity-50 br-black hover:bg-white"><i
-                        class="fa-solid fa-chevron-right text-3xl"></i></button>
-                <div class="owl4 owl-carousel owl-theme">
-                    <div class="item active">
-                        <div>
-                            <img src="dist/images/tech_12.jpg" alt="" class="h-[200px]">
-                        </div>
+    <section class="hidden lg:block py-4 mx-4 max-w1400">
+        <!-- <div class=" py-3"> -->
+        <div class="relative bg-white p-5">
+            <p class="text-2xl font-bold py-4">Popular items this season</p>
+            <!-- carousel next button -->
+            <button
+                class="btn_next2 absolute top-[115px] -right-[1px] z-10 py-11 px-4 bg-slate-50 opacity-50 br-black hover:bg-white"><i
+                    class="fa-solid fa-chevron-right text-3xl"></i></button>
+            <div class="owl4 owl-carousel owl-theme">
+                <div class="item active">
+                    <div>
+                        <img src="dist/images/tech_12.jpg" alt="" class="h-[200px]">
                     </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/tech_7.jpg" alt="" class="h-[200px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/tech_8.jpg" alt="" class="h-[200px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/tech_9.jpg" alt="" class="h-[200px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/tech_10.jpg" alt="" class="h-[200px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/tech_11.jpg" alt="" class="h-[200px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/tech_1.jpg" alt="" class="h-[73px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/tech_2.jpg" alt="" class="h-[200px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/tech_3.jpg" alt="" class="h-[200px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/tech_4.jpg" alt="" class="h-[200px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/tech_5.jpg" alt="" class="h-[200px]">
-                        </div>
-                    </div>
-
                 </div>
-                <!-- carousel prev button -->
-                <button class="btn_prev2 absolute top-[92px] left-0 z-10 py-11 px-6 bg-slate-50 opacity-50  br-black"><i
-                        class="fa-solid fa-chevron-left text-3xl text-gray-800 hover:text-black"></i></button>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/tech_7.jpg" alt="" class="h-[200px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/tech_8.jpg" alt="" class="h-[200px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/tech_9.jpg" alt="" class="h-[200px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/tech_10.jpg" alt="" class="h-[200px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/tech_11.jpg" alt="" class="h-[200px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/tech_1.jpg" alt="" class="h-[73px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/tech_2.jpg" alt="" class="h-[200px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/tech_3.jpg" alt="" class="h-[200px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/tech_4.jpg" alt="" class="h-[200px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/tech_5.jpg" alt="" class="h-[200px]">
+                    </div>
+                </div>
 
             </div>
+            <!-- carousel prev button -->
+            <button class="btn_prev2 absolute top-[92px] left-0 z-10 py-11 px-4 bg-slate-50 opacity-50  br-black"><i
+                    class="fa-solid fa-chevron-left text-3xl text-gray-800 hover:text-black"></i></button>
 
         </div>
+        <!-- </div> -->
     </section>
 
-
     <!-- section no. 3: cards -->
-    <section class="hidden lg:block bg-[#e3e6e6] py-4">
-        <div class="mx-6">
+    <section class="hidden lg:block py-4 mx-4 max-w1400">
+        <div class="">
             <div class="grid grid-cols-12 gap-6">
                 <div class="lg:col-span-4 xl:col-span-3 bg-white h-full">
                     <div class="px-4">
-                        <h3 class="text-xl font-semibold p-3">New arrivals in Toys</h3>
+                        <p class="text-xl font-semibold p-3">New arrivals in Toys</p>
                         <div class="flex items-center">
                             <div>
                                 <a href="#"><img src="dist/images/Fuji_Dash_Toys_1X._SY304_CB639759658_.jpg" alt=""
@@ -848,7 +1094,7 @@
                 </div>
                 <div class="lg:col-span-4 xl:col-span-3 bg-white h-full">
                     <div class="px-4">
-                        <h3 class="text-xl font-semibold p-3">For your Fitness Needs</h3>
+                        <p class="text-xl font-semibold p-3">For your Fitness Needs</p>
                         <div class="flex items-center">
                             <div>
                                 <a href="#"><img src="dist/images/Fuji_Dash_Fitness_1X._SY304_CB639748186_.jpg" alt=""
@@ -864,7 +1110,7 @@
                 </div>
                 <div class="lg:col-span-4 xl:col-span-3 bg-white h-full">
                     <div class="px-4">
-                        <h3 class="text-xl font-semibold p-3">Shop activity trackers and smartwatches</h3>
+                        <p class="text-xl font-semibold p-3">Shop activity trackers and smartwatches</p>
                         <div class="flex items-center">
                             <div>
                                 <a href="#"><img src="dist/images/Fuji_Dash_SmartWatch_1X._SY304_CB639922137_.jpg"
@@ -880,7 +1126,7 @@
                 </div>
                 <div class="lg:col-span-4 xl:col-span-3 bg-white h-full">
                     <div class="px-4">
-                        <h3 class="text-xl font-semibold p-3">Kindle E readers</h3>
+                        <p class="text-xl font-semibold p-3">Kindle E readers</p>
                         <div class="flex items-center">
                             <div>
                                 <a href="#"><img src="dist/images/Fuji_Desktop_Dash_Kindle_1x._SY304_CB639752818_.jpg"
@@ -895,235 +1141,227 @@
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <!-- section no. 4 :  carousel : International top sellers -->
-    <section class="hidden lg:block bg-[#e3e6e6] px-6 py-4">
-        <div class="bg-white py-3">
-            <div class="container mx-auto relative">
-                <h3 class="text-2xl font-bold py-4">International top sellers</h3>
-                <!-- carousel next button -->
-                 <button
-                    class="btn_next2 absolute top-[92px] -right-[25px] z-10 py-11 px-6 bg-slate-50 opacity-50 br-black hover:bg-white"><i
-                        class="fa-solid fa-chevron-right text-3xl"></i></button>
-                <div class="owl4 owl-carousel owl-theme">
-                    <div class="item active">
-                        <div>
-                            <img src="dist/images/medic_1.jpg" alt="" class="h-[200px]">
-                        </div>
+    <section class="hidden lg:block py-4 mx-4 max-w1400">
+        <div class="bg-white p-5 relative">
+            <p class="text-2xl font-semibold py-4">International top sellers</p>
+            <!-- carousel next button -->
+            <button
+                class="btn_next2 absolute top-[115px] -right-[1px] z-10 py-11 px-4 bg-slate-50 opacity-50 br-black hover:bg-white"><i
+                    class="fa-solid fa-chevron-right text-3xl"></i></button>
+            <div class="owl4 owl-carousel owl-theme">
+                <div class="item active">
+                    <div>
+                        <img src="dist/images/medic_1.jpg" alt="" class="h-[200px]">
                     </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/medic_2.jpg" alt="" class="h-[200px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/medic_3.jpg" alt="" class="h-[200px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/medic_4.jpg" alt="" class="h-[200px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/medic_5.jpg" alt="" class="mx-auto h-[200px] !w-[160px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/medic_7.jpg" alt="" class="h-[200px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/medic_8.jpg" alt="" class="mx-auto h-[200px] !w-[160px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/medic_9.jpg" alt="" class="mx-auto h-[200px] !w-[160px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/medic_10.jpg" alt="" class="mx-auto h-[200px] !w-[160px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="">
-                            <img src="dist/images/medic_11.jpg" alt="" class="mx-auto h-[200px] !w-[84px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/medic_12.jpg" alt="" class="h-[200px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/medic_13.jpg" alt="" class="h-[200px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/medic_14.jpg" alt="" class="mx-auto h-[200px] !w-[84px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/medic_15.jpg" alt="" class="h-[200px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/medic_16.jpg" alt="" class="h-[200px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/medic_17.jpg" alt="" class="h-[200px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/medic_18.jpg" alt="" class="mx-auto h-[200px] !w-[84px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/medic_19.jpg" alt="" class="h-[200px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/medic_20.jpg" alt="" class="h-[200px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/medic_21.jpg" alt="" class="h-[200px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/medic_22.jpg" alt="" class="mx-auto h-[200px] !w-[84px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/medic_23.jpg" alt="" class="h-[200px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/medic_24.jpg" alt="" class="h-[200px]">
-                        </div>
-                    </div>
-
                 </div>
-                <!-- carousel prev button -->
-                <button class="btn_prev2 absolute top-[92px] left-0 z-10 py-11 px-6 bg-slate-50 opacity-50  br-black"><i
-                        class="fa-solid fa-chevron-left text-3xl text-gray-800 hover:text-black"></i></button>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/medic_2.jpg" alt="" class="h-[200px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/medic_3.jpg" alt="" class="h-[200px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/medic_4.jpg" alt="" class="h-[200px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/medic_5.jpg" alt="" class="mx-auto h-[200px] !w-[160px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/medic_7.jpg" alt="" class="h-[200px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/medic_8.jpg" alt="" class="mx-auto h-[200px] !w-[160px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/medic_9.jpg" alt="" class="mx-auto h-[200px] !w-[160px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/medic_10.jpg" alt="" class="mx-auto h-[200px] !w-[160px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="">
+                        <img src="dist/images/medic_11.jpg" alt="" class="mx-auto h-[200px] !w-[84px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/medic_12.jpg" alt="" class="h-[200px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/medic_13.jpg" alt="" class="h-[200px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/medic_14.jpg" alt="" class="mx-auto h-[200px] !w-[84px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/medic_15.jpg" alt="" class="h-[200px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/medic_16.jpg" alt="" class="h-[200px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/medic_17.jpg" alt="" class="h-[200px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/medic_18.jpg" alt="" class="mx-auto h-[200px] !w-[84px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/medic_19.jpg" alt="" class="h-[200px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/medic_20.jpg" alt="" class="h-[200px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/medic_21.jpg" alt="" class="h-[200px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/medic_22.jpg" alt="" class="mx-auto h-[200px] !w-[84px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/medic_23.jpg" alt="" class="h-[200px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/medic_24.jpg" alt="" class="h-[200px]">
+                    </div>
+                </div>
             </div>
+            <!-- carousel prev button -->
+            <button class="btn_prev2 absolute top-[92px] left-0 z-10 py-11 px-4 bg-slate-50 opacity-50  br-black"><i
+                    class="fa-solid fa-chevron-left text-3xl text-gray-800 hover:text-black"></i></button>
         </div>
     </section>
 
     <!-- section no. 5 :  carousel : Popular products in Beauty internationally -->
-    <section class="hidden lg:block bg-[#e3e6e6] px-6 py-4">
-        <div class="bg-white py-3">
-            <div class="container mx-auto relative">
-                <h3 class="text-2xl font-bold py-4">Popular products in Beauty internationally</h3>
-                <!-- carousel next button -->
-                <button
-                    class="btn_next3 absolute top-[92px] -right-[25px] z-10 py-11 px-6 bg-slate-50 opacity-50 br-black hover:bg-white"><i
-                        class="fa-solid fa-chevron-right text-3xl"></i></button>
-                <div class="owl5 owl-carousel owl-theme">
-                    <div class="item active">
-                        <div>
-                            <img src="dist/images/s5_meds_1.jpg" alt="" class="mx-auto h-[200px] !w-[84px]">
-                        </div>
+    <section class="hidden lg:block py-4 mx-4 max-w1400">
+        <div class="bg-white p-5 relative">
+            <p class="text-2xl font-semibold py-4">Popular products in Beauty internationally</p>
+            <!-- carousel next button -->
+            <button
+                class="btn_next3 absolute top-[115px] -right-[1px] z-10 py-11 px-4 bg-slate-50 opacity-50 br-black hover:bg-white"><i
+                    class="fa-solid fa-chevron-right text-3xl"></i></button>
+            <div class="owl5 owl-carousel owl-theme">
+                <div class="item active">
+                    <div>
+                        <img src="dist/images/s5_meds_1.jpg" alt="" class="mx-auto h-[200px] !w-[84px]">
                     </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/s5_meds_2.jpg" alt="" class="mx-auto h-[200px] !w-[160px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/s5_meds_3.jpg" alt="" class="mx-auto h-[200px] !w-[84px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/s5_meds_4.jpg" alt="" class="mx-auto h-[200px] !w-[160px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/s5_meds_5.jpg" alt="" class="mx-auto h-[200px] !w-[84px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/s5_meds_7.jpg" alt="" class="mx-auto h-[200px] !w-[160px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/s5_meds_8.jpg" alt="" class="mx-auto  h-[200px] !w-[160px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/s5_meds_9.jpg" alt="" class=" mx-auto h-[200px] !w-[84px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/s5_meds_10.jpg" alt="" class="mx-auto  h-[200px] !w-[84px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="">
-                            <img src="dist/images/s5_meds_11.jpg" alt="" class=" mx-auto h-[200px] !w-[84px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/s5_meds_12.jpg" alt="" class="mx-auto h-[200px] !w-[84px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/s5_meds_13.jpg" alt="" class="mx-auto h-[200px] !w-[84px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/s5_meds_14.jpg" alt="" class="mx-auto h-[200px] !w-[160px]">
-                        </div>
-                    </div>
-
-
                 </div>
-                <!-- carousel prev button -->
-                <button class="btn_prev3 absolute top-[92px] left-0 z-10 py-11 px-6 bg-slate-50 opacity-50  br-black"><i
-                        class="fa-solid fa-chevron-left text-3xl text-gray-800 hover:text-black"></i></button>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/s5_meds_2.jpg" alt="" class="mx-auto h-[200px] !w-[160px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/s5_meds_3.jpg" alt="" class="mx-auto h-[200px] !w-[84px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/s5_meds_4.jpg" alt="" class="mx-auto h-[200px] !w-[160px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/s5_meds_5.jpg" alt="" class="mx-auto h-[200px] !w-[84px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/s5_meds_7.jpg" alt="" class="mx-auto h-[200px] !w-[160px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/s5_meds_8.jpg" alt="" class="mx-auto  h-[200px] !w-[160px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/s5_meds_9.jpg" alt="" class=" mx-auto h-[200px] !w-[84px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/s5_meds_10.jpg" alt="" class="mx-auto  h-[200px] !w-[84px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="">
+                        <img src="dist/images/s5_meds_11.jpg" alt="" class=" mx-auto h-[200px] !w-[84px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/s5_meds_12.jpg" alt="" class="mx-auto h-[200px] !w-[84px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/s5_meds_13.jpg" alt="" class="mx-auto h-[200px] !w-[84px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/s5_meds_14.jpg" alt="" class="mx-auto h-[200px] !w-[160px]">
+                    </div>
+                </div>
             </div>
+            <!-- carousel prev button -->
+            <button class="btn_prev3 absolute top-[92px] left-0 z-10 py-11 px-4 bg-slate-50 opacity-50  br-black"><i
+                    class="fa-solid fa-chevron-left text-3xl text-gray-800 hover:text-black"></i></button>
         </div>
     </section>
 
     <!-- section no. 6: cards -->
-    <section class="hidden lg:block bg-[#e3e6e6] py-4">
-        <div class="mx-6">
+    <section class="hidden lg:block py-4 mx-4 max-w1400">
+        <div class="">
             <div class="grid grid-cols-12 gap-6">
                 <div class="lg:col-span-4 xl:col-span-3 bg-white h-full">
                     <div class="px-4">
-                        <h3 class="text-xl font-semibold p-3">Shop Laptops & Tablets</h3>
+                        <p class="text-xl font-semibold p-3">Shop Laptops & Tablets</p>
                         <div class="flex items-center">
                             <div>
                                 <a href="#"><img src="dist/images/s6_cards_1.jpg" alt="" class="h-[293px]"></a>
@@ -1138,7 +1376,7 @@
                 </div>
                 <div class="lg:col-span-4 xl:col-span-3 bg-white h-full">
                     <div class="px-4">
-                        <h3 class="text-xl font-semibold p-3">Create with strip lights</h3>
+                        <p class="text-xl font-semibold p-3">Create with strip lights</p>
                         <div class="flex items-center">
                             <div>
                                 <a href="#"><img src="dist/images/s6_cards_2.jpg" alt="" class="h-[293px]"></a>
@@ -1153,10 +1391,10 @@
                 </div>
                 <div class="lg:col-span-4 xl:col-span-3 bg-white h-full">
                     <div class="px-4">
-                        <h3 class="text-xl font-semibold p-3">Shop Pet supplies</h3>
+                        <p class="text-xl font-semibold p-3">Shop Pet supplies</p>
                         <div class="flex items-center">
                             <div>
-                                <a href="#"><img src="dist/images/s6_cards_3.jpg" alt="" class="h-[265px]"></a>
+                                <a href="#"><img src="dist/images/s6_cards_3.jpg" alt="" class="h-[293px]"></a>
                             </div>
                         </div>
                         <div class="py-5">
@@ -1168,14 +1406,14 @@
                 </div>
                 <div class="lg:col-span-4 xl:col-span-3 bg-white h-full">
                     <div class="px-4">
-                        <h3 class="text-xl font-semibold p-3">A holiday home starts here</h3>
+                        <p class="text-xl font-semibold p-3">A holiday home starts here</p>
                         <div class="h-[293px]">
                             <div class="flex justify-around items-center h-[147px]">
                                 <div class="">
                                     <a href="#" class="text-sm text-start"><img src="dist/images/s6_cards_4.jpg" alt=""
                                             class="w-32"><span class="">Décor</span></a>
                                 </div>
-                                <div>
+                                <div class="ml-3">
                                     <a href="#" class="text-sm text-start"><img src="dist/images/s6_cards_5.jpg" alt=""
                                             class="w-32">Kitchen</a>
                                 </div>
@@ -1185,7 +1423,7 @@
                                     <a href="#"><img src="dist/images/s6_cards_6.jpg" alt=""
                                             class="w-32">Entertaining</a>
                                 </div>
-                                <div>
+                                <div class="ml-3">
                                     <a href="#" class="text-sm text-start"><img src="dist/images/s6_cards_7.jpg" alt=""
                                             class="w-32">Bedding &
                                         Bath</a>
@@ -1203,144 +1441,141 @@
         </div>
     </section>
 
-
     <!-- section no. 7 :  carousel : Popular products in PC internationally -->
-    <section class="hidden lg:block bg-[#e3e6e6] px-6 py-4">
-        <div class="bg-white py-3">
-            <div class="container mx-auto relative">
-                <h3 class="text-2xl font-bold py-4">Popular products in PC internationally</h3>
-                <!-- carousel next button -->
-                <button
-                    class="btn_next2 absolute top-[92px] -right-[25px] z-10 py-11 px-6 bg-slate-50 opacity-50 br-black hover:bg-white"><i
-                        class="fa-solid fa-chevron-right text-3xl"></i></button>
-                <div class="owl6 owl-carousel owl-theme">
-                    <div class="item active">
-                        <div>
-                            <img src="dist/images/gaming_1.jpg" alt="" class="h-[200px]">
-                        </div>
+    <section class="hidden lg:block py-4 mx-4 max-w1400">
+        <div class="bg-white p-5 relative">
+            <p class="text-2xl font-bold py-4">Popular products in PC internationally</p>
+            <!-- carousel next button -->
+            <button
+                class="btn_next2 absolute top-[115px] -right-[1px] z-10 py-11 px-4 bg-slate-50 opacity-50 br-black hover:bg-white"><i
+                    class="fa-solid fa-chevron-right text-3xl"></i></button>
+            <div class="owl6 owl-carousel owl-theme">
+                <div class="item active">
+                    <div>
+                        <img src="dist/images/gaming_1.jpg" alt="" class="h-[200px]">
                     </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/gaming_2.jpg" alt="" class="h-[200px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/gaming_3.jpg" alt="" class="h-[200px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/gaming_4.jpg" alt="" class="h-[200px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/gaming_5.jpg" alt="" class="h-[200px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/gaming_7.jpg" alt="" class="h-[200px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/gaming_8.jpg" alt="" class="h-[200px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/gaming_9.jpg" alt="" class="h-[200px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/gaming_10.jpg" alt="" class="h-[200px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/gaming_11.jpg" alt="" class="h-[200px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/gaming_12.jpg" alt="" class="h-[84px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/gaming_13.jpg" alt="" class="h-[200px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/gaming_14.jpg" alt="" class="h-[200px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/gaming_15.jpg" alt="" class="h-[200px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/gaming_16.jpg" alt="" class="h-[200px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/gaming_17.jpg" alt="" class="h-[200px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/gaming_18.jpg" alt="" class="h-[160px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/gaming_19.jpg" alt="" class="h-[200px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/gaming_20.jpg" alt="" class="h-[84px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/gaming_22.jpg" alt="" class="h-[200px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/gaming_23.jpg" alt="" class="h-[160px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/gaming_24.jpg" alt="" class="h-[84px]">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <img src="dist/images/gaming_25.jpg" alt="" class="h-[200px]">
-                        </div>
-                    </div>
-
                 </div>
-                <!-- carousel prev button -->
-                <button class="btn_prev2 absolute top-[92px] left-0 z-10 py-11 px-6 bg-slate-50 opacity-50  br-black"><i
-                        class="fa-solid fa-chevron-left text-3xl text-gray-800 hover:text-black"></i></button>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/gaming_2.jpg" alt="" class="h-[200px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/gaming_3.jpg" alt="" class="h-[200px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/gaming_4.jpg" alt="" class="h-[200px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/gaming_5.jpg" alt="" class="h-[200px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/gaming_7.jpg" alt="" class="h-[200px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/gaming_8.jpg" alt="" class="h-[200px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/gaming_9.jpg" alt="" class="h-[200px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/gaming_10.jpg" alt="" class="h-[200px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/gaming_11.jpg" alt="" class="h-[200px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/gaming_12.jpg" alt="" class="h-[84px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/gaming_13.jpg" alt="" class="h-[200px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/gaming_14.jpg" alt="" class="h-[200px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/gaming_15.jpg" alt="" class="h-[200px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/gaming_16.jpg" alt="" class="h-[200px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/gaming_17.jpg" alt="" class="h-[200px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/gaming_18.jpg" alt="" class="h-[160px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/gaming_19.jpg" alt="" class="h-[200px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/gaming_20.jpg" alt="" class="h-[84px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/gaming_22.jpg" alt="" class="h-[200px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/gaming_23.jpg" alt="" class="h-[160px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/gaming_24.jpg" alt="" class="h-[84px]">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="dist/images/gaming_25.jpg" alt="" class="h-[200px]">
+                    </div>
+                </div>
+
             </div>
+            <!-- carousel prev button -->
+            <button class="btn_prev2 absolute top-[92px] left-0 z-10 py-11 px-4 bg-slate-50 opacity-50  br-black"><i
+                    class="fa-solid fa-chevron-left text-3xl text-gray-800 hover:text-black"></i></button>
         </div>
     </section>
 
     <!-- section no. 8 : carousel > Gift ideas inspired by your shopping history -->
-    <section class="hidden lg:block py-9">
-        <div class="pt-8 border-y-[1px]">
+    <section class="hidden lg:block pt-3 max-w1400">
+        <div class="pt-8 border-y-[1px] bg-white">
             <div class="px-9">
                 <div class="pt-3 flex justify-between">
                     <p class="font-bold text-lg">Gift ideas inspired by your shopping history</p>
@@ -1355,7 +1590,7 @@
                                 </div>
                                 <div class="px-[22px]">
                                     <div>
-                                        <a href="#" class="text-sm text-blue-500 hover:text-red-400">
+                                        <a href="#" class="text-sm text-[#007185] hover:text-red-700">
                                             Western Digital 500GB WD Blue SN570 NVMe Internal Solid State Drive SSD -
                                             Gen3 x4
                                             PCIe 8Gb/s, M.2 2280, Up to 3,500 MB/s -...
@@ -1364,7 +1599,7 @@
                                     </div>
                                     <!-- rating stars -->
                                     <div>
-                                        <ul class="flex group">
+                                        <ul class="flex group text-[13px]">
                                             <li><a href=""><i class="fa-solid fa-star text-orange-400"></i></a>
                                             </li>
                                             <li><a href=""><i class="fa-solid fa-star text-orange-400"></i></a>
@@ -1376,20 +1611,30 @@
                                             <li><a href=""><i class="fa-solid fa-star text-orange-400"></i></a>
                                             </li>
                                             <li><a href=""
-                                                    class="pl-1 text-sm text-blue-500 group-hover:text-orange-400">9,968</a>
+                                                    class="pl-1 text-sm text-[#007185] group-hover:text-orange-400">9,968</a>
                                             </li>
                                         </ul>
                                     </div>
-                                    <div>
-                                        <a href="" class="text-lg font-semibold">$34.99</a>
+                                    <div class="relative ">
+                                        <a href="">
+                                        <div class="absolute top-0 left-0 z-30">
+                                            <span
+                                                class="relative text-xs text-white font-semibold bg-orange-700 py-[2px] pl-2 pr-5 rounded after:content-[' '] after:absolute after:top-[2px] after:-right-[6px] after:rotate-[50deg] after:bg-gray-50 after:p-2">
+                                                #1 Best Seller</span>
+                                        </div>
+                                        <div class="absolute top-0 right-5 z-30">
+                                            <span class="text-sm text-[#007185] font-medium">in AAA</span>
+                                        </div>
+                                    </a>
                                         <div>
-                                            <span class="text-xs">$40.61 shipping</span>
+                                            <a href="" class="text-lg font-semibold">$34.99</a>
+                                            <div>
+                                                <span class="text-xs">$40.61 shipping</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
-
                         </div>
                         <div class="item">
                             <div>
@@ -1398,7 +1643,7 @@
                                 </div>
                                 <div class="px-[22px]">
                                     <div>
-                                        <a href="#" class="text-sm text-blue-500 hover:text-red-400">
+                                        <a href="#" class="text-sm text-[#007185] hover:text-red-700">
                                             Crucial P3 500GB PCIe Gen3 3D NAND NVMe M.2 SSD, up to 3500MB/s -CT500P3SSD8
                                         </a>
                                     </div>
@@ -1417,7 +1662,7 @@
                                                         class="fa-solid fa-star-half-stroke text-orange-400"></i></a>
                                             </li>
                                             <li><a href=""
-                                                    class="pl-1 text-sm text-blue-500 group-hover:text-orange-400">9,968</a>
+                                                    class="pl-1 text-sm text-[#007185] group-hover:text-orange-400">9,968</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -1437,7 +1682,7 @@
                                 </div>
                                 <div class="px-[22px]">
                                     <div>
-                                        <a href="#" class="text-sm text-blue-500 hover:text-red-400">
+                                        <a href="#" class="text-sm text-[#007185] hover:text-red-700">
                                             Western Digital 500GB WD Blue SN570 NVMe Internal Solid State Drive SSD -
                                             Gen3 x4
                                             PCIe 8Gb/s, M.2 2280, Up to 3,500 MB/s -...
@@ -1458,7 +1703,7 @@
                                             <li><a href=""><i class="fa-solid fa-star text-orange-400"></i></a>
                                             </li>
                                             <li><a href=""
-                                                    class="pl-1 text-sm text-blue-500 group-hover:text-orange-400">9,968</a>
+                                                    class="pl-1 text-sm text-[#007185] group-hover:text-orange-400">9,968</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -1478,7 +1723,7 @@
                                 </div>
                                 <div class="px-[22px]">
                                     <div>
-                                        <a href="#" class="text-sm text-blue-500 hover:text-red-400">
+                                        <a href="#" class="text-sm text-[#007185] hover:text-red-700">
                                             Western Digital 500GB WD Blue SN570 NVMe Internal Solid State Drive SSD -
                                             Gen3 x4
                                             PCIe 8Gb/s, M.2 2280, Up to 3,500 MB/s -...
@@ -1499,7 +1744,7 @@
                                             <li><a href=""><i class="fa-solid fa-star text-orange-400"></i></a>
                                             </li>
                                             <li><a href=""
-                                                    class="pl-1 text-sm text-blue-500 group-hover:text-orange-400">9,968</a>
+                                                    class="pl-1 text-sm text-[#007185] group-hover:text-orange-400">9,968</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -1519,7 +1764,7 @@
                                 </div>
                                 <div class="px-[22px]">
                                     <div>
-                                        <a href="#" class="text-sm text-blue-500 hover:text-red-400">
+                                        <a href="#" class="text-sm text-[#007185] hover:text-red-700">
                                             Western Digital 500GB WD Blue SN570 NVMe Internal Solid State Drive SSD -
                                             Gen3 x4
                                             PCIe 8Gb/s, M.2 2280, Up to 3,500 MB/s -...
@@ -1540,14 +1785,21 @@
                                             <li><a href=""><i class="fa-solid fa-star text-orange-400"></i></a>
                                             </li>
                                             <li><a href=""
-                                                    class="pl-1 text-sm text-blue-500 group-hover:text-orange-400">9,968</a>
+                                                    class="pl-1 text-sm text-[#007185] group-hover:text-orange-400">9,968</a>
                                             </li>
                                         </ul>
                                     </div>
-                                    <div>
-                                        <a href="" class="text-lg font-semibold">$34.99</a>
+                                    <div class="relative">
+                                            <div class="absolute top-0 left-0 z-10">
+                                                <span
+                                                    class="relative text-xs text-white font-medium bg-gray-700 py-[2px] pl-2 pr-5 after:content-[' '] after:absolute after:top-[2px] after:-right-[14px] after:rotate-[122deg] after:bg-white after:p-[14px]">
+                                                    Amazon's <span class="text-orange-400">Choice</span></span>
+                                            </div>
                                         <div>
-                                            <span class="text-xs">$40.61 shipping</span>
+                                            <a href="" class="text-lg font-semibold">$34.99</a>
+                                            <div>
+                                                <span class="text-xs">$40.61 shipping</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -1560,7 +1812,7 @@
                                 </div>
                                 <div class="px-[22px]">
                                     <div>
-                                        <a href="#" class="text-sm text-blue-500 hover:text-red-400">
+                                        <a href="#" class="text-sm text-[#007185] hover:text-red-700">
                                             Western Digital 500GB WD Blue SN570 NVMe Internal Solid State Drive SSD -
                                             Gen3 x4
                                             PCIe 8Gb/s, M.2 2280, Up to 3,500 MB/s -...
@@ -1581,7 +1833,7 @@
                                             <li><a href=""><i class="fa-solid fa-star text-orange-400"></i></a>
                                             </li>
                                             <li><a href=""
-                                                    class="pl-1 text-sm text-blue-500 group-hover:text-orange-400">9,968</a>
+                                                    class="pl-1 text-sm text-[#007185] group-hover:text-orange-400">9,968</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -1611,7 +1863,7 @@
                         <button
                             class="px-24 py-1 text-sm bg-orange-300 font-semibold border-[1px] border-orange-500 rounded">Sign
                             in</button>
-                        <p class="text-xs py-2">New Customer <a href="#" class="text-blue-500">Start
+                        <p class="text-xs py-2">New Customer <a href="#" class="text-[#007185]">Start
                                 here.</a></p>
                     </div>
                 </div>
@@ -1621,8 +1873,8 @@
 
 
     <!-- Sign in for the best experience -->
-    <section class="border-b-[5px] lg:hidden">
-        <div class="mx-3 my-4">
+    <section class="border-b-[5px] lg:hidden max-w1400">
+        <div class="mx-3 my-4 bg-white">
             <p class="font-bold text-lg mb-4">Sign in for the best experience</p>
             <button class="w-full h-12 mb-5 rounded-[10px] font-semibold bg-yellow-400">Sign in securely</button>
             <a href="" class="text-green-700 hover:underline decoration-green-700">Create an account</a>
@@ -1639,7 +1891,7 @@
                         <div class="w-28 h-[88px] flex justify-center">
                             <img src="dist/images/recomm_1.jpg" alt="" class="w-12 h-[88px]">
                         </div>
-                        <div class="ml-8">
+                        <div class="ml-8 w-full">
                             <a href="">
                                 <div class="flex">
                                     <p class="bg-pink-700 text-white text-xs font-semibold py-2 px-[9px]">
@@ -1662,7 +1914,7 @@
                         <div class="w-28 h-[88px] flex justify-center">
                             <img src="dist/images/recomm_2.jpg" alt="" class="w-12 h-[88px]">
                         </div>
-                        <div class="ml-8">
+                        <div class="ml-8 w-full">
                             <a href="">
                                 <div class="flex">
                                     <p class="bg-pink-700 text-white text-xs font-semibold py-2 px-[9px]">
@@ -1684,7 +1936,7 @@
                         <div class="w-28 h-[88px] flex justify-center">
                             <img src="dist/images/recomm_3.jpg" alt="" class="w-12 h-[88px]">
                         </div>
-                        <div class="ml-8">
+                        <div class="ml-8 w-full">
                             <a href="">
                                 <div class="flex">
                                     <p class="bg-pink-700 text-white text-xs font-semibold py-2 px-[9px]">
@@ -1741,10 +1993,10 @@
             <ul>
                 <li class="mb-4">
                     <div class="flex">
-                        <div class="bg-gray-100 w-64 h-72 flex justify-center items-center">
-                            <img src="dist/images/Popular_items_1.jpg" alt="" class="w-[180px] h-[270px]">
+                        <div class="bg-gray-100 w-48 h-48 flex justify-center items-center">
+                            <img src="dist/images/Popular_items_1.jpg" alt="" class="">
                         </div>
-                        <div class="text-gray-700 ml-3">
+                        <div class="text-gray-700 ml-3 w-full">
                             <a href="" class="font-medium text-[15px]">Apple iPhone 12 Pro Max, 256GB, Pacific Blue -
                                 Unlocked (Renewed
                                 Premium)</a>
@@ -1757,10 +2009,10 @@
                 </li>
                 <li class="mb-4">
                     <div class="flex">
-                        <div class="bg-gray-100 w-64 h-72 flex justify-center items-center">
-                            <img src="dist/images/Popular_items_2.jpg" alt="" class="w-[180px] h-[270px]">
+                        <div class="bg-gray-100 w-48 h-48 flex justify-center items-center">
+                            <img src="dist/images/Popular_items_2.jpg" alt="" class="">
                         </div>
-                        <div class="text-gray-700 ml-3">
+                        <div class="text-gray-700 ml-3 w-full">
                             <a href="" class="font-medium text-[15px]">ASUS Prime B450M-A II AMD AM4 (Ryzen 5000,
                                 3rd/2nd/1st Gen Ryzen Micro ATX Motherboard (128GB DDR4, 4400 O.C.), NVMe,...</a>
                             <div>
@@ -1771,10 +2023,10 @@
                 </li>
                 <li class="mb-4">
                     <div class="flex">
-                        <div class="bg-gray-100 w-64 h-72 flex justify-center items-center">
-                            <img src="dist/images/Popular_items_3.jpg" alt="" class="w-[180px] h-[270px]">
+                        <div class="bg-gray-100 w-48 h-48 flex justify-center items-center">
+                            <img src="dist/images/Popular_items_3.jpg" alt="" class="">
                         </div>
-                        <div class="text-gray-700 ml-3">
+                        <div class="text-gray-700 ml-3 w-full">
                             <a href="" class="font-medium text-[15px]">OnePlus 9 Astral Black, 5G Unlocked Android
                                 Smartphone U.S Version, 8GB RAM+128GB Storage,120Hz Fluid Display,...
                             </a>
@@ -1791,8 +2043,8 @@
 
     <!-- shop computers and accessories -->
     <section class="bg-gray-300 lg:hidden">
-        <div class="w-[500px] h-[210px] mx-auto flex justify-center items-center">
-            <img src="dist/images/accessories.jpg" alt="" class="w-[400px] h-48">
+        <div class="w-full h-full py-3 px-28 mx-auto flex justify-center items-center">
+            <img src="dist/images/accessories.jpg" alt="" class="max-w-full">
         </div>
     </section>
 
@@ -1829,10 +2081,10 @@
             <ul>
                 <li class="mb-4">
                     <div class="flex">
-                        <div class="bg-gray-100 w-64 h-72 flex justify-center items-center">
-                            <img src="dist/images/popular_international_1.jpg" alt="" class="w-[180px] h-[270px]">
+                        <div class="bg-gray-100 w-64 flex justify-center items-center">
+                            <img src="dist/images/popular_international_1.jpg" alt="" class="">
                         </div>
-                        <div class="text-gray-700 ml-3">
+                        <div class="text-gray-700 ml-3 w-full">
                             <a href="" class="font-medium text-[15px]">Plum Gator 7 4G Volte Unlocked Rugged Smart Phone
                                 Military Grade IP69 Water Shock Proof 5580 mAh Battery - Black
                             </a>
@@ -1846,10 +2098,10 @@
                 </li>
                 <li class="mb-4">
                     <div class="flex">
-                        <div class="bg-gray-100 w-64 h-72 flex justify-center items-center">
-                            <img src="dist/images/popular_international_2.jpg" alt="" class="w-[180px] h-[270px]">
+                        <div class="bg-gray-100 w-64 flex justify-center items-center">
+                            <img src="dist/images/popular_international_2.jpg" alt="" class="">
                         </div>
-                        <div class="text-gray-700 ml-3">
+                        <div class="text-gray-700 ml-3 w-full">
                             <a href="" class="font-medium text-[15px]">iPhone 13 Pro Max, 256GB, Sierra Blue - Unlocked
                                 (Renewed Premium)
                             </a>
@@ -1861,10 +2113,10 @@
                 </li>
                 <li class="mb-4">
                     <div class="flex">
-                        <div class="bg-gray-100 w-64 h-72 flex justify-center items-center">
-                            <img src="dist/images/popular_international_3.jpg" alt="" class="w-[180px] h-[270px]">
+                        <div class="bg-gray-100 w-64 flex justify-center items-center">
+                            <img src="dist/images/popular_international_3.jpg" alt="" class="">
                         </div>
-                        <div class="text-gray-700 ml-3">
+                        <div class="text-gray-700 ml-3 w-full">
                             <a href="" class="font-medium text-[15px]">Garmin Striker Vivid 4cv, Easy-to-Use 4-inch
                                 Color Fishfinder and Sonar Transducer, Vivid Scanning Sonar Color Palettes...
                             </a>
@@ -1931,7 +2183,6 @@
         </div>
     </section>
 
-
     <!-- Popular Gifts in Camera -->
     <section class="mx-3 border-b-[5px] lg:hidden">
         <p class="font-bold text-xl my-4">Popular Gifts in Camera</p>
@@ -1991,10 +2242,10 @@
             <ul>
                 <li class="mb-4">
                     <div class="flex">
-                        <div class="bg-gray-100 w-64 h-72 flex justify-center items-center">
-                            <img src="dist/images/personal_care_1.jpg" alt="" class="w-[180px] h-[270px]">
+                        <div class="bg-gray-100 w-72 h-60 flex justify-center items-center">
+                            <img src="dist/images/personal_care_1.jpg" alt="">
                         </div>
-                        <div class="text-gray-700 ml-3">
+                        <div class="text-gray-700 ml-3 w-full">
                             <a href="" class="font-medium text-[15px]">Plum Gator 7 4G Volte Unlocked Rugged Smart Phone
                                 Military Grade IP69 Water Shock Proof 5580 mAh Battery - Black
                             </a>
@@ -2008,10 +2259,10 @@
                 </li>
                 <li class="mb-4">
                     <div class="flex">
-                        <div class="bg-gray-100 w-64 h-72 flex justify-center items-center">
-                            <img src="dist/images/personal_care_2.jpg" alt="" class="w-[180px] h-[270px]">
+                        <div class="bg-gray-100 w-72 h-60 flex justify-center items-center">
+                            <img src="dist/images/personal_care_2.jpg" alt="">
                         </div>
-                        <div class="text-gray-700 ml-3">
+                        <div class="text-gray-700 ml-3 w-full">
                             <a href="" class="font-medium text-[15px]">iPhone 13 Pro Max, 256GB, Sierra Blue - Unlocked
                                 (Renewed Premium)
                             </a>
@@ -2023,10 +2274,10 @@
                 </li>
                 <li class="mb-4">
                     <div class="flex">
-                        <div class="bg-gray-100 w-64 h-72 flex justify-center items-center">
-                            <img src="dist/images/personal_care_3.jpg" alt="" class="w-[180px] h-[270px]">
+                        <div class="bg-gray-100 w-72 h-60 flex justify-center items-center">
+                            <img src="dist/images/personal_care_3.jpg" alt="">
                         </div>
-                        <div class="text-gray-700 ml-3">
+                        <div class="text-gray-700 ml-3 w-full">
                             <a href="" class="font-medium text-[15px]">Garmin Striker Vivid 4cv, Easy-to-Use 4-inch
                                 Color Fishfinder and Sonar Transducer, Vivid Scanning Sonar Color Palettes...
                             </a>
@@ -2067,7 +2318,6 @@
         </div>
     </section>
 
-
     <!-- Must have Baby products -->
     <section class="mx-3 lg:hidden">
         <p class="font-bold text-xl my-4">Must have Baby products</p>
@@ -2096,8 +2346,8 @@
 
     <!-- discover our beauty selection -->
     <section class="bg-gray-300 lg:hidden">
-        <div class="w-[500px] h-[210px] mx-auto flex justify-center items-center">
-            <img src="dist/images/discover_beauty.jpg" alt="" class="w-[400px] h-48">
+        <div class="w-full h-full py-3 px-28 mx-auto flex justify-center items-center">
+            <img src="dist/images/discover_beauty.jpg" alt="" class="max-w-full">
         </div>
     </section>
 
@@ -2108,10 +2358,10 @@
             <ul>
                 <li class="mb-4">
                     <div class="flex">
-                        <div class="bg-gray-100 w-64 h-72 flex justify-center items-center">
-                            <img src="dist/images/top_sellers_1.jpg" alt="" class="w-[180px] h-[270px]">
+                        <div class="bg-gray-100 w-72 h-48 flex justify-center items-center">
+                            <img src="dist/images/top_sellers_1.jpg" alt="">
                         </div>
-                        <div class="text-gray-700 ml-3">
+                        <div class="text-gray-700 ml-3 w-full">
                             <a href="" class="font-medium text-[15px]">Plum Gator 7 4G Volte Unlocked Rugged Smart Phone
                                 Military Grade IP69 Water Shock Proof 5580 mAh Battery - Black
                             </a>
@@ -2125,10 +2375,10 @@
                 </li>
                 <li class="mb-4">
                     <div class="flex">
-                        <div class="bg-gray-100 w-64 h-72 flex justify-center items-center">
-                            <img src="dist/images/top_sellers_2.jpg" alt="" class="w-[180px] h-[270px]">
+                        <div class="bg-gray-100 w-72 h-48 flex justify-center items-center">
+                            <img src="dist/images/top_sellers_2.jpg" alt="">
                         </div>
-                        <div class="text-gray-700 ml-3">
+                        <div class="text-gray-700 ml-3 w-full">
                             <a href="" class="font-medium text-[15px]">iPhone 13 Pro Max, 256GB, Sierra Blue - Unlocked
                                 (Renewed Premium)
                             </a>
@@ -2140,10 +2390,10 @@
                 </li>
                 <li class="mb-4">
                     <div class="flex">
-                        <div class="bg-gray-100 w-64 h-72 flex justify-center items-center">
-                            <img src="dist/images/top_sellers_3.jpg" alt="" class="w-[180px] h-[270px]">
+                        <div class="bg-gray-100 w-72 h-48 flex justify-center items-center">
+                            <img src="dist/images/top_sellers_3.jpg" alt="">
                         </div>
-                        <div class="text-gray-700 ml-3">
+                        <div class="text-gray-700 ml-3 w-full">
                             <a href="" class="font-medium text-[15px]">Garmin Striker Vivid 4cv, Easy-to-Use 4-inch
                                 Color Fishfinder and Sonar Transducer, Vivid Scanning Sonar Color Palettes...
                             </a>
@@ -2160,8 +2410,8 @@
 
     <!-- refresh your space -->
     <section class="bg-gray-300 lg:hidden">
-        <div class="w-[500px] h-[210px] mx-auto flex justify-center items-center">
-            <img src="dist/images/refresh_space.jpg" alt="" class="w-[400px] h-48">
+        <div class="w-full h-full py-3 px-28 mx-auto flex justify-center items-center">
+            <img src="dist/images/refresh_space.jpg" alt="" class="max-w-full">
         </div>
     </section>
 
@@ -2264,7 +2514,6 @@
                 </div>
             </div>
         </div>
-
         <div class="my-4">
             <a href="" class="text-green-700 hover:underline decoration-green-700">All Departments</a>
         </div>
@@ -2272,9 +2521,16 @@
 
     <!-- footer -->
     <footer>
-        <button class="w-full py-4 font-semibold text-white text-sm bg-slate-700 hover:bg-slate-400">Back to
-            top</button>
-        <section class="bg-slate-800 py-8">
+        <div class="relative bg-slate-700 py-1">
+            <button class="block lg:hidden w-full pt-6 pb-2 font-medium text-gray-100 text-xs">TOP
+                OF PAGE <span class="absolute top-2 left-0 right-0 text-gray-300"><i
+                        class="fa-solid fa-caret-up"></i></span>
+            </button>
+            <button class="hidden lg:block w-full py-4 font-semibold text-white text-sm hover:bg-slate-400">Back
+                to top</button>
+        </div>
+        <!-- section:  Get to Know Us -->
+        <!-- <section class="hidden lg:block bg-slate-800 py-8">
             <div class="container mx-auto">
                 <div class="grid grid-cols-12">
                     <div class="col-span-3">
@@ -2365,6 +2621,129 @@
                             </li>
                             <li class="py-[2px]"><a href=""
                                     class="text-gray-300 font-semibold text-sm hover:underline">Help</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <section class="bg-slate-800 py-8">
+            <div class="container mx-auto">
+                <div class="grid grid-cols-12">
+                    <div class="hidden lg:block lg:col-span-3">
+                        <p class=" font-bold text-white">Get to Know Us</p>
+                        <ul class=" pt-3">
+                            <li class="py-[2px]"><a href=""
+                                    class="text-gray-300 font-semibold text-sm hover:underline">Careers</a></li>
+                            <li class="py-[2px]"><a href=""
+                                    class="text-gray-300 font-semibold text-sm hover:underline">Blog</a></li>
+                            <li class="py-[2px]"><a href=""
+                                    class="text-gray-300 font-semibold text-sm hover:underline">About Amazon</a></li>
+                            <li class="py-[2px]"><a href=""
+                                    class="text-gray-300 font-semibold text-sm hover:underline">Investor Relations</a>
+                            </li>
+                            <li class="py-[2px]"><a href=""
+                                    class="text-gray-300 font-semibold text-sm hover:underline">Amazon Devices</a></li>
+                            <li class="py-[2px]"><a href=""
+                                    class="text-gray-300 font-semibold text-sm hover:underline">Amazon Science</a></li>
+                        </ul>
+                    </div>
+                    <div class="hidden lg:block lg:col-span-3">
+                        <p class=" font-bold text-white">Make Money with Us</p>
+                        <ul class=" pt-3">
+                            <li class="py-[2px]"><a href=""
+                                    class="text-gray-300 font-semibold text-sm hover:underline">Sell products on
+                                    Amazon</a></li>
+                            <li class="py-[2px]"><a href=""
+                                    class="text-gray-300 font-semibold text-sm hover:underline">Sell on Amazon
+                                    Business</a></li>
+                            <li class="py-[2px]"><a href=""
+                                    class="text-gray-300 font-semibold text-sm hover:underline">Sell apps on Amazon</a>
+                            </li>
+                            <li class="py-[2px]"><a href=""
+                                    class="text-gray-300 font-semibold text-sm hover:underline">Become an Affiliate</a>
+                            </li>
+                            <li class="py-[2px]"><a href=""
+                                    class="text-gray-300 font-semibold text-sm hover:underline">Advertise Your
+                                    Products</a></li>
+                            <li class="py-[2px]"><a href=""
+                                    class="text-gray-300 font-semibold text-sm hover:underline">Self-Publish with Us</a>
+                            </li>
+                            <li class="py-[2px]"><a href=""
+                                    class="text-gray-300 font-semibold text-sm hover:underline">Host an Amazon Hub</a>
+                            </li>
+                            <li class="py-[2px]"><a href=""
+                                    class="text-gray-300 font-semibold text-sm hover:underline">>See More Make Money
+                                    <br>with Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="hidden lg:block lg:col-span-3">
+                        <p class=" font-bold text-white">Amazon Payment Products</p>
+                        <ul class=" pt-3">
+                            <li class="py-[2px]"><a href=""
+                                    class="text-gray-300 font-semibold text-sm hover:underline">Amazon Business Card</a>
+                            </li>
+                            <li class="py-[2px]"><a href=""
+                                    class="text-gray-300 font-semibold text-sm hover:underline">Shop with Points</a>
+                            </li>
+                            <li class="py-[2px]"><a href=""
+                                    class="text-gray-300 font-semibold text-sm hover:underline">Reload Your Balance</a>
+                            </li>
+                            <li class="py-[2px]"><a href=""
+                                    class="text-gray-300 font-semibold text-sm hover:underline">Amazon Currency
+                                    Converter</a></li>
+                        </ul>
+                    </div>
+                    <div class="hidden lg:block lg:col-span-3">
+                        <p class=" font-bold text-white">Make Money with Us</p>
+                        <ul class=" pt-3">
+                            <li class="py-[2px]"><a href=""
+                                    class="text-gray-300 font-semibold text-sm hover:underline">Amazon and COVID-
+                                    <br>19</a></li>
+                            <li class="py-[2px]"><a href=""
+                                    class="text-gray-300 font-semibold text-sm hover:underline">Your Account</a></li>
+                            <li class="py-[2px]"><a href=""
+                                    class="text-gray-300 font-semibold text-sm hover:underline">Your Orders</a></li>
+                            <li class="py-[2px]"><a href=""
+                                    class="text-gray-300 font-semibold text-sm hover:underline">Shipping Rates &
+                                    <br>Policies</a></li>
+                            <li class="py-[2px]"><a href=""
+                                    class="text-gray-300 font-semibold text-sm hover:underline">Returns &
+                                    <br>Replacements</a></li>
+                            <li class="py-[2px]"><a href=""
+                                    class="text-gray-300 font-semibold text-sm hover:underline">Manage Your brContent
+                                    and Devices</a></li>
+                            <li class="py-[2px]"><a href=""
+                                    class="text-gray-300 font-semibold text-sm hover:underline">Amazon Assistant</a>
+                            </li>
+                            <li class="py-[2px]"><a href=""
+                                    class="text-gray-300 font-semibold text-sm hover:underline">Help</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-span-6 lg:hidden">
+                        <ul>
+                            <li class="py-2"><a href="#" class="text-gray-200 font-bold text-[15px]">Amazon.com</a></li>
+                            <li class="py-2"><a href="#" class="text-gray-200 font-bold text-[15px]">Your Lists</a></li>
+                            <li class="py-2"><a href="#" class="text-gray-200 font-bold text-[15px]">Find a Gift</a>
+                            </li>
+                            <li class="py-2"><a href="#" class="text-gray-200 font-bold text-[15px]">Browsing
+                                    History</a></li>
+                            <li class="py-2"><a href="#" class="text-gray-200 font-bold text-[15px]">Returns</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-span-6 lg:hidden">
+                        <ul>
+                            <li class="py-2"><a href="#" class="text-gray-200 font-bold text-[15px]">Your Orders</a>
+                            </li>
+                            <li class="py-2"><a href="#" class="text-gray-200 font-bold text-[15px]">Gift Cards &
+                                    Registry</a></li>
+                            <li class="py-2"><a href="#" class="text-gray-200 font-bold text-[15px]">Your Account</a>
+                            </li>
+                            <li class="py-2"><a href="#" class="text-gray-200 font-bold text-[15px]">Sell products on
+                                    Amazon</a></li>
+                            <li class="py-2"><a href="#" class="text-gray-200 font-bold text-[15px]">Your Recalls and
+                                    Product Safety Alerts</a></li>
+                            <li class="py-2"><a href="#" class="text-gray-200 font-bold text-[15px]">Customer
+                                    Service</a></li>
                         </ul>
                     </div>
                 </div>
@@ -2714,13 +3093,10 @@
                 </ul>
 
                 <div class="lg:hidden mb-12 text-center">
-                    <p class="font-bold text-white">Already a customer?<a href="#">Sign in</a></p>
+                    <p class="font-semibold text-gray-200">Already a customer?<a href="#" class="ml-1">Sign in</a></p>
                 </div>
-
-
                 <div class="text-center">
                     <div class="text-center">
-
                         <ul class="flex justify-center">
                             <li class="pr-6">
                                 <a href="" class="font-medium text-gray-300 text-xs hover:underline">Conditions of
@@ -2740,16 +3116,14 @@
                         <p class="font-medium text-gray-300 text-xs">© 1996-2023, Amazon.com, Inc. or its affiliates</p>
                     </div>
                 </div>
-
             </div>
         </section>
-
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"
         integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"
-        integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
+        integrity="sha512-rpLlll167T5LJHwp0waJCpZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="

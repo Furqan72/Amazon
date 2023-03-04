@@ -2,3 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 @tailwindcss/typography;
+
+
+@media (min-width: 1400px) {
+    .max-w1440{
+        max-width: 1440px;
+        margin: auto;
+    }
+    .max-w1400{
+        max-width: 1400px;
+        margin: auto;
+    }
+}

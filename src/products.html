@@ -23,27 +23,26 @@
 
     <!-- header -->
     <header>
-        <nav class=" ">
+        <nav>
             <!-- grid -->
-            <div class="bg-black h-28 lg:h-16 px-5 grid grid-cols-12">
+            <div class="bg-black h-28 lg:h-16 px-2 grid grid-cols-12">
                 <!-- logo -->
                 <div class="col-span-6 lg:col-span-1">
                     <div
-                        class="drp_icon relative p-[6px] xl:p-3 lg:border-transparent lg:border-[1px] lg:hover:border-white lg:hover:border-[1px]">
-                        <div class="flex justify-start lg:justify-between items-center">
+                        class="drp_icon relative p-[6px] xl:pt-3 xl:pr-2 lg:border-transparent lg:border-[1px] lg:hover:border-white lg:hover:border-[1px]">
+                        <div class="sm-nav-open flex justify-start lg:justify-between items-center">
                             <button class="block lg:hidden text-white text-3xl text-[26px]"><i
                                     class="fa-solid fa-bars"></i></button>
-                            <div class="pt-1 pl-3">
-                                <img src="../dist/images/Amazon_logo_PNG5.png" alt="" class="p-1 w-24">
-
+                            <div class="pt-[5px] lg:py-2 ml-2 lg:m-0">
+                                <img src="../dist/images/Amazon_logo_PNG5.png" alt="" class=" w-24">
                             </div>
                         </div>
 
-                        <!-- small-nav -->
-                        <div class="drp hidden absolute  top-0 -left-5 z-10 w-[45rem] bg-white text-black h-[100vh]">
-                            <div class="bg-gray-600 pr-10 pl-3 py-3 h-[135px] relative">
-                                <div class="drp absolute top-14 -right-[132px]">
-                                    <button class=" text-white text-xl "><i class="fa-solid fa-x"></i></button>
+                        <!-- small-nav side-bar -->
+                        <div id="sm_nav" class=" fixed top-0 -left-[54rem] z-50 w-[20rem] sm:w-[27rem] md:w-[45rem] h-screen overflow-auto bg-white text-black duration-500">
+                            <div class="bg-gray-600 pr-10 pl-3 py-3 h-[135px]">
+                                <div class="sm-nav-close absolute top-0 right-[5px] z-50 ">
+                                    <button class="text-xl"><i class="fa-solid fa-x text-white"></i></button>
                                 </div>
                                 <div class="flex justify-between flex-wrap-reverse">
                                     <div class="w-full">
@@ -52,256 +51,335 @@
                                     </div>
                                     <div class="flex justify-end items-center w-full">
                                         <a href="" class="text-white font-medium">sign in</a>
-                                        <a class="text-white"><i class="fa-regular fa-user w-[18px]"></i></a>
+                                        <a class="text-white"><i class="fa-regular fa-user ml-2 w-[18px]"></i></a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="border-b-[5px]">
-                                <ul>
-                                    <li class="px-3 py-4">
-                                        <div class="flex justify-between">
-                                            <a href="" class="font-bold text-xl text-gray-800">Amazon Home</a>
-                                            <span><i class="fa-solid fa-house"></i></span>
+                            <div class="">
+                                <div class="border-b-[5px]">
+                                    <ul class="">
+                                        <li class="px-3 py-4">
+                                            <div class="flex justify-between">
+                                                <a href="" class="font-bold text-xl text-gray-800">Amazon Home</a>
+                                                <span><i class="fa-solid fa-house"></i></span>
 
-                                        </div>
-                                    </li>
-                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="border-b-[5px]">
+                                    <ul>
+                                        <li class="pl-3 py-4">
+                                            <p href="" class="font-bold text-xl text-gray-800">Trending</p>
+                                        </li>
+                                        <li class="pl-3 py-4">
+                                            <p class="font-medium text-base text-gray-800">Movers & Shakers</p>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="border-b-[1px]">
+                                    <ul>
+                                        <li class="pl-3 py-4">
+                                            <p class="font-bold text-xl text-gray-800">Top Departements</p>
+                                        </li>
+                                        <li class="pl-3 py-4"><a href=""
+                                                class="font-medium text-base text-gray-800">Home</a>
+                                        </li>
+                                        <li class="pl-3 py-4"><a href=""
+                                                class="font-medium text-base text-gray-800">Health
+                                                & Household</a>
+                                        </li>
+                                        <li class="pl-3 py-4"><a href=""
+                                                class="font-medium text-base text-gray-800">Books</a>
+                                        </li>
+                                        <li class="drp_icon_1 relative pl-3 pt-4 pb-[72px]"><a href="#"
+                                                class="font-medium text-base text-gray-800">
+                                                See All<i class="fa-solid fa-chevron-down pl-2"></i></a>
+
+                                            <div class="hidden drp_1">
+                                                <ul class="border-t-[1px]">
+                                                    <li class="pr-5 py-4 flex justify-between ">
+                                                        <a href="" class="font-medium text-base text-gray-700">Amazon
+                                                            Music</a>
+                                                        <span class="font-medium text-base text-gray-500"><i
+                                                                class="fa-solid fa-chevron-right"></i></span>
+                                                    </li>
+                                                    <li class="pr-5 py-4 flex justify-between">
+                                                        <a href="" class="font-medium text-base text-gray-700">Prime
+                                                            Video</a>
+                                                        <span class="font-medium text-base text-gray-500"><i
+                                                                class="fa-solid fa-chevron-right"></i></span>
+                                                    </li>
+                                                    <li class="pr-5 py-4 flex justify-between">
+                                                        <a href="" class="font-medium text-base text-gray-700">Books</a>
+                                                        <span class="font-medium text-base text-gray-500"><i
+                                                                class="fa-solid fa-chevron-right"></i></span>
+                                                    </li>
+                                                    <li class="pr-5 py-4 flex justify-between">
+                                                        <a href="" class="font-medium text-base text-gray-700">Echo &
+                                                            Alexa</a>
+                                                        <span class="font-medium text-base text-gray-500"><i
+                                                                class="fa-solid fa-chevron-right"></i></span>
+                                                    </li>
+                                                    <li class="pr-5 py-4 flex justify-between">
+                                                        <a href="" class="font-medium text-base text-gray-700">Fire
+                                                            Tablets</a>
+                                                        <span class="font-medium text-base text-gray-500"><i
+                                                                class="fa-solid fa-chevron-right"></i></span>
+                                                    </li>
+                                                    <li class="pr-5 py-4 flex justify-between">
+                                                        <a href="" class="font-medium text-base text-gray-700">Fire
+                                                            TV</a>
+                                                        <span class="font-medium text-base text-gray-500"><i
+                                                                class="fa-solid fa-chevron-right"></i></span>
+                                                    </li>
+                                                    <li class="pr-5 py-4 flex justify-between">
+                                                        <a href=""
+                                                            class="font-medium text-base text-gray-700">Kindle</a>
+                                                        <span class="font-medium text-base text-gray-500"><i
+                                                                class="fa-solid fa-chevron-right"></i></span>
+                                                    </li>
+                                                    <li class="pr-5 py-4 flex justify-between">
+                                                        <a href="" class="font-medium text-base text-gray-700">Audible
+                                                            Books
+                                                            & Originals</a>
+                                                        <span class="font-medium text-base text-gray-500"><i
+                                                                class="fa-solid fa-chevron-right"></i></span>
+                                                    </li>
+                                                    <li class="pr-5 py-4 flex justify-between">
+                                                        <a href="" class="font-medium text-base text-gray-700">Clothing,
+                                                            Shoes, Jewelry & Watches</a>
+                                                        <span class="font-medium text-base text-gray-500"><i
+                                                                class="fa-solid fa-chevron-right"></i></span>
+                                                    </li>
+                                                    <li class="pr-5 py-4 flex justify-between">
+                                                        <a href=""
+                                                            class="font-medium text-base text-gray-700">Electronic</a>
+                                                        <span class="font-medium text-base text-gray-500"><i
+                                                                class="fa-solid fa-chevron-right"></i></span>
+                                                    </li>
+                                                    <li class="pr-5 py-4 flex justify-between">
+                                                        <a href="" class="font-medium text-base text-gray-700">Office &
+                                                            School Supplies</a>
+                                                        <span class="font-medium text-base text-gray-500"><i
+                                                                class="fa-solid fa-chevron-right"></i></span>
+                                                    </li>
+                                                    <li class="pr-5 flex justify-between">
+                                                        <a href="#" class=" font-medium text-base text-gray-700">See
+                                                            Less</a>
+                                                        <span class="font-medium text-base text-gray-500"><i
+                                                                class="fa-solid fa-chevron-up pl-3"></i></span>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="border-b-[5px]">
-                                <ul>
-                                    <li class="pl-3 py-4">
-                                        <p href="" class="font-bold text-xl text-gray-800">Trending</p>
-                                    </li>
-                                    <li class="pl-3 py-4">
-                                        <p class="font-medium text-base text-gray-800">Movers & Shakers</p>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="border-b-[1px]">
-                                <ul>
-                                    <li class="pl-3 py-4">
-                                        <p class="font-bold text-xl text-gray-800">Top Departements</p>
-                                    </li>
-                                    <li class="pl-3 py-4"><a href=""
-                                            class="font-medium text-base text-gray-800">Home</a>
-                                    </li>
-                                    <li class="pl-3 py-4"><a href="" class="font-medium text-base text-gray-800">Health
-                                            & Household</a>
-                                    </li>
-                                    <li class="pl-3 py-4"><a href=""
-                                            class="font-medium text-base text-gray-800">Books</a>
-                                    </li>
-                                    <li class="drp_icon_1 relative pl-3 pt-4 pb-[72px]"><a href="#"
-                                            class="font-medium text-base text-gray-800">
-                                            See All<i class="fa-solid fa-chevron-down pl-2"></i></a>
-
-                                        <div class="hidden drp_1">
-                                            <ul class="border-t-[1px]">
-                                                <li class="px-2 py-4 flex justify-between ">
-                                                    <a href="" class="font-medium text-base text-gray-700">Amazon
-                                                        Music</a>
-                                                    <span class="font-medium text-base text-gray-500"><i
-                                                            class="fa-solid fa-chevron-right"></i></span>
-                                                </li>
-                                                <li class="px-2 py-4 flex justify-between">
-                                                    <a href="" class="font-medium text-base text-gray-700">Prime
-                                                        Video</a>
-                                                    <span class="font-medium text-base text-gray-500"><i
-                                                            class="fa-solid fa-chevron-right"></i></span>
-                                                </li>
-                                                <li class="px-2 py-4 flex justify-between">
-                                                    <a href="" class="font-medium text-base text-gray-700">Books</a>
-                                                    <span class="font-medium text-base text-gray-500"><i
-                                                            class="fa-solid fa-chevron-right"></i></span>
-                                                </li>
-                                                <li class="px-2 py-4 flex justify-between">
-                                                    <a href="" class="font-medium text-base text-gray-700">Echo &
-                                                        Alexa</a>
-                                                    <span class="font-medium text-base text-gray-500"><i
-                                                            class="fa-solid fa-chevron-right"></i></span>
-                                                </li>
-                                                <li class="px-2 py-4 flex justify-between">
-                                                    <a href="" class="font-medium text-base text-gray-700">Fire
-                                                        Tablets</a>
-                                                    <span class="font-medium text-base text-gray-500"><i
-                                                            class="fa-solid fa-chevron-right"></i></span>
-                                                </li>
-                                                <li class="px-2 py-4 flex justify-between">
-                                                    <a href="" class="font-medium text-base text-gray-700">Fire TV</a>
-                                                    <span class="font-medium text-base text-gray-500"><i
-                                                            class="fa-solid fa-chevron-right"></i></span>
-                                                </li>
-                                                <li class="px-2 py-4 flex justify-between">
-                                                    <a href="" class="font-medium text-base text-gray-700">Kindle</a>
-                                                    <span class="font-medium text-base text-gray-500"><i
-                                                            class="fa-solid fa-chevron-right"></i></span>
-                                                </li>
-                                                <li class="px-2 py-4 flex justify-between">
-                                                    <a href="" class="font-medium text-base text-gray-700">Audible Books
-                                                        & Originals</a>
-                                                    <span class="font-medium text-base text-gray-500"><i
-                                                            class="fa-solid fa-chevron-right"></i></span>
-                                                </li>
-                                                <li class="px-2 py-4 flex justify-between">
-                                                    <a href="" class="font-medium text-base text-gray-700">Clothing,
-                                                        Shoes, Jewelry & Watches</a>
-                                                    <span class="font-medium text-base text-gray-500"><i
-                                                            class="fa-solid fa-chevron-right"></i></span>
-                                                </li>
-                                                <li class="px-2 py-4 flex justify-between">
-                                                    <a href=""
-                                                        class="font-medium text-base text-gray-700">Electronic</a>
-                                                    <span class="font-medium text-base text-gray-500"><i
-                                                            class="fa-solid fa-chevron-right"></i></span>
-                                                </li>
-                                                <li class="px-2 py-4 flex justify-between">
-                                                    <a href="" class="font-medium text-base text-gray-700">Office &
-                                                        School Supplies</a>
-                                                    <span class="font-medium text-base text-gray-500"><i
-                                                            class="fa-solid fa-chevron-right"></i></span>
-                                                </li>
-                                                <li class="px-2 flex justify-between">
-                                                    <a href="#" class=" font-medium text-base text-gray-700">See
-                                                        Less</a>
-                                                    <span class="font-medium text-base text-gray-500"><i
-                                                            class="fa-solid fa-chevron-up pl-3"></i></span>
-                                                </li>
-
-                                            </ul>
-                                        </div>
-
-                                    </li>
-                                </ul>
-                            </div>
-
                         </div>
                     </div>
                 </div>
                 <div
-                    class="hidden lg:block p-[6px] text-center lg:border-transparent lg:border-[1px] lg:hover:border-white lg:hover:border-[1px]">
-                    <a href=""><span class="text-gray-300 text-xs xl:text-sm text-end">Deliver to</span>
-                        <div>
-                            <span class="text-white text-[13px] xl:text-base"><i
-                                    class="fa-solid fa-location-dot pr-2"></i>Pakistan</span>
+                    class="hidden lg:block text-center lg:border-transparent pt-3 pl-2 leading-none border-[1px] lg:hover:border-white lg:hover:border-[1px]">
+                    <a href="">
+                        <div class="flex leading-none">
+                            <div class="flex items-end">
+                                <span class="text-white"><i class="fa-solid fa-location-dot mr-1"></i></span>
+                            </div>
+                            <div class="text-start">
+                                <span class="text-gray-300 text-xs text-end">Deliver to</span>
+                                <span class="text-[13px] text-white font-bold">Pakistan</span>
+                            </div>
                         </div>
                     </a>
                 </div>
                 <!-- search field -->
-                <div class="lg:pt-[10px] order-[9999] col-span-12 lg:-order-none lg:col-span-6 leading-none">
-                    <label for="hs-trailing-button-add-on-with-leading-and-trailing" class="sr-only">Label</label>
-                    <div class="flex rounded-md shadow-sm">
-                        <button
-                            class="drp_icon relative hidden lg:inline-flex items-center px-4 min-w-fit rounded-l-md border border-r-0 border-gray-200 bg-gray-100 text-xs text-gray-500 dark:bg-gray-700 dark:border-gray-400 ">
-
-                            Beauty & Personal Care<i class="fa-solid fa-caret-down ml-2"></i>
-                            <div class="drp hidden absolute left-0 top-10 z-[15] bg-white border-2px border-black">
-                                <ul class="text-start px-3">
-                                    <li><a href="">All&nbsp;Departement</a></li>
-                                    <li><a href="">Arts&nbsp;&&nbsp;Departement</a></li>
-                                    <li><a href="">Automative</a></li>
-                                    <li><a href="">Baby</a></li>
-                                    <li><a href="">beauty&nbsp;&&nbsp;Personal&nbsp;Care</a></li>
-                                    <li><a href="">Books</a></li>
-                                    <li><a href="">Boys's&nbsp;Fashion</a></li>
-                                    <li><a href="">Computers</a></li>
-                                    <li><a href="">Deals</a></li>
-                                    <li><a href="">Digital&nbsp;Music</a></li>
-                                    <li><a href="">Girl's&nbsp;Fashion</a></li>
-                                    <li><a href="">Health&nbsp;&&nbsp;Household</a></li>
-                                    <li><a href="">Home&nbsp;&&nbsp;Kitchen</a></li>
-                                    <li><a href="">Indutrial&nbsp;&&nbsp;Scientific</a></li>
-                                    <li><a href="">Kindle&nbsp;Store</a></li>
-                                    <li><a href="">Luggage</a></li>
-                                    <li><a href="">Men's&nbsp;Fashion</a></li>
-                                </ul>
-
+                <div class="pt-[9px] pb-2 order-[9999] col-span-12 lg:-order-none lg:col-span-6">
+                    <div>
+                        <label for="hs-trailing-button-add-on-with-leading-and-trailing" class="sr-only">Label</label>
+                        <div class="flex rounded-sm">
+                            <div
+                                class="relative drp_icon hidden lg:inline-flex items-center px-2 min-w-fit rounded-l-md border border-r-0 border-gray-200 bg-gray-100 text-sm text-gray-500 h-11">
+                                <button id="drp_search">All <span><i
+                                            class="fa-solid fa-caret-down ml-1"></i></span></button>
+                                <div class="drp hidden absolute left-0 top-10 z-[15] w-48 bg-white border-[1px]">
+                                    <ul class="text-start p-3 h-[50vh] overflow-auto">
+                                        <li class="py-1"><a href="#" class="drp_menu">All Departement</a></li>
+                                        <li class="py-1"><a href="#" class="drp_menu">Arts & Departement</a></li>
+                                        <li class="py-1"><a href="#" class="drp_menu">Automative</a></li>
+                                        <li class="py-1"><a href="#" class="drp_menu">Baby</a></li>
+                                        <li class="py-1"><a href="#" class="drp_menu">beauty & Personal Care</a></li>
+                                        <li class="py-1"><a href="#" class="drp_menu">Books</a></li>
+                                        <li class="py-1"><a href="#" class="drp_menu">Boys's Fashion</a></li>
+                                        <li class="py-1"><a href="#" class="drp_menu">Computers</a></li>
+                                        <li class="py-1"><a href="#" class="drp_menu">Deals</a></li>
+                                        <li class="py-1"><a href="#" class="drp_menu">Digital Music</a></li>
+                                        <li class="py-1"><a href="#" class="drp_menu">Girl's Fashion</a></li>
+                                        <li class="py-1"><a href="#" class="drp_menu">Health & Household</a></li>
+                                        <li class="py-1"><a href="#" class="drp_menu">Home & Kitchen</a></li>
+                                        <li class="py-1"><a href="#" class="drp_menu">Indutrial & Scientific</a></li>
+                                        <li class="py-1"><a href="#" class="drp_menu">Kindle Store</a></li>
+                                        <li class="py-1"><a href="#" class="drp_menu">Luggage</a></li>
+                                        <li class="py-1"><a href="#" class="drp_menu">Men's Fashion</a></li>
+                                    </ul>
+                                </div>
                             </div>
-                        </button>
-                        <input type="text" id="hs-trailing-button-add-on-with-leading-and-trailing"
-                            placeholder="Search in International Shipping Beauty & Personal Care"
-                            name="hs-trailing-button-add-on-with-leading-and-trailing"
-                            class="py-3 px-4 block w-full border-gray-200 shadow-sm rounded-0 text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                        <button type="button"
-                            class="inline-flex flex-shrink-0 justify-center items-center h-[2.875rem] w-[2.875rem] rounded-r-md border-0 lg:border-transparent font-semibold bg-orange-300 text-black text-sm">
-                            <i class="fa-solid fa-magnifying-glass font-semibold text-xl"></i>
-                        </button>
+                            <input type="text" id="hs-trailing-button-add-on-with-leading-and-trailing"
+                                placeholder="Amazon Search" name="hs-trailing-button-add-on-with-leading-and-trailing"
+                                class="py-3 px-4 block w-full border-gray-200 shadow-sm rounded-0 text-sm h-11 rounded-l-[6px] lg:rounded-l-[0px] ">
+                            <button type="button"
+                                class="inline-flex flex-shrink-0 justify-center items-center w-[54px] rounded-r-md border lg:border-transparent font-semibold bg-orange-300 text-black text-sm h-11">
+                                <i class="fa-solid fa-magnifying-glass font-semibold text-xl"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
+
                 <!-- navbar right-side links -->
                 <div class=" col-span-6 lg:order-[9999] lg:col-span-4">
                     <div class="flex justify-end lg:justify-evenly items-center">
                         <div
-                            class="hidden lg:block drp_icon relative py-4 px- text-start lg:border-transparent lg:border-[1px] lg:hover:border-white lg:hover:border-[1px]">
-                            <a href="#" class=" text-white text-sm xl:text-base">EN<i
+                            class="hidden lg:block drp_icon_h relative py-4 px-1 text-start lg:border-transparent lg:border-[1px] lg:hover:border-white lg:hover:border-[1px]">
+                            <a href="#" class=" text-white text-sm xl:text-base font-bold">EN<i
                                     class="fa-solid fa-caret-down ml-2"></i>
-                                <div class="drp hidden absolute top-[50px] z-10 bg-white text-black">
-                                    <ul class="px-2 py-3">
-                                        <li class="py-2"><a href="#">Departement</a></li>
-                                        <li class="py-2"><a href="#">Departement</a></li>
-                                        <li class="py-2"><a href="#">Departement</a></li>
-                                        <li class="py-2"><a href="#">Departement</a></li>
-                                    </ul>
-                                </div>
                             </a>
+                            <div
+                                class="drp_h hidden absolute top-[58px] -right-[88px] z-20 w-[216px] pb-4 pt-2 px-[18px] bg-white text-black">
+                                <div
+                                    class="absolute -top-[6px] right-[100px] z-30 w-[10px] h-[10px] rotate-[225deg] bg-white border-[1px] border-gray-600 border-t-0 border-l-0">
+                                </div>
+                                <div class="flex justify-start items-center my-2">
+                                    <p class="text-[13px] mr-2">Change language</p>
+                                    <a href="#"
+                                        class="text-[11px] text-blue-600 hover:text-orange-700 hover:underline">Learn
+                                        more</a>
+                                </div>
+                                <ul class="">
+                                    <li class="flex items-center"><span class="mr-3"><i
+                                                class="fa-regular fa-circle text-sm"></i></span><span
+                                            class=" my-2 pb-3 border-b-[1px] w-full text-sm">English - EN</span></li>
+                                    <li class="py-1"><a href="#"><span class="mr-3"><i
+                                                    class="fa-regular fa-circle text-sm"></i></span><span
+                                                class="text-xs hover:text-orange-500 hover:underline">español -
+                                                ES</span></a></li>
+                                    <li class="py-1"><a href="#"><span class="mr-3"><i
+                                                    class="fa-regular fa-circle text-sm"></i></span><span
+                                                class="text-xs hover:text-orange-500 hover:underline">العربية-
+                                                AR</span></a></li>
+                                    <li class="py-1"><a href="#"><span class="mr-3"><i
+                                                    class="fa-regular fa-circle text-sm"></i></span><span
+                                                class="text-xs hover:text-orange-500 hover:underline">Deutsch -
+                                                DE</span></a></li>
+                                    <li class="py-1"><a href="#"><span class="mr-3"><i
+                                                    class="fa-regular fa-circle text-sm"></i></span><span
+                                                class="text-xs hover:text-orange-500 hover:underline">עברית -
+                                                HE</span></a></li>
+                                    <li class="py-1"><a href="#"><span class="mr-3"><i
+                                                    class="fa-regular fa-circle text-sm"></i></span><span
+                                                class="text-xs hover:text-orange-500 hover:underline">한국어 -
+                                                KO</span></a></li>
+                                    <li class="py-1"><a href="#"><span class="mr-3"><i
+                                                    class="fa-regular fa-circle text-sm"></i></span><span
+                                                class="text-xs hover:text-orange-500 hover:underline">português -
+                                                PT</span></a></li>
+                                    <li class="py-1"><a href="#"><span class="mr-3"><i
+                                                    class="fa-regular fa-circle text-sm"></i></span><span
+                                                class="text-xs hover:text-orange-500 hover:underline">中文 (简体) -
+                                                ZH</span></a></li>
+                                    <li class="py-1"><a href="#"><span class="mr-3"><i
+                                                    class="fa-regular fa-circle text-sm"></i></span><span
+                                                class="text-xs hover:text-orange-500 hover:underline">中文 (繁體) -
+                                                ZH</span></a></li>
+                                </ul>
+                                <div class=" my-3 py-2 border-y-[1px]">
+                                    <div class="flex justify-start items-center pb-[14px]">
+                                        <p class="text-[13px] mr-2">Change currency</p>
+                                        <a href="#"
+                                            class="text-[11px] text-blue-600 hover:text-orange-700 hover:underline">Learn
+                                            more</a>
+                                    </div>
+                                    <div class="flex justify-between items-center text-sm">
+                                        <p>$ - USD - US Dollar</p>
+                                        <a href="#"
+                                            class="text-xs text-blue-600 hover:text-orange-700 hover:underline">Change</a>
+                                    </div>
+                                </div>
+                                <div class="text-sm text-gray-700">
+                                    <p class="text-start pb-2">You are shopping on Amazon.com</p>
+                                    <a href="#"
+                                        class="text-center text-blue-600 hover:text-orange-700 hover:underline">Change
+                                        country/region.</a>
+                                </div>
+                            </div>
                         </div>
                         <div
-                            class="hidden lg:block drp_icon relative p-[6px] xl:p-[10px] text-white lg:border-transparent lg:border-[1px] lg:hover:border-white lg:hover:border-[1px]">
-                            <button class="">
+                            class="hidden lg:block drp_icon_h relative p-[6px] xl:p-[10px] text-white lg:border-transparent leading-none lg:border-[1px] lg:hover:border-white lg:hover:border-[1px]">
+                            <button class="leading-none text-sm">
                                 <p class=" text-gray-50 text-start text-xs font-semibold">Hello,&nbsp;sign&nbsp;in <br>
                                 </p>
-                                <p class="font-semibold text-sm xl:text-base">Account&nbsp;&&nbsp;Lists <i
+                                <p class="font-bold text-sm leading-none xl:text-base">Account&nbsp;&&nbsp;Lists <i
                                         class="fa-solid fa-caret-down"></i></p>
                             </button>
-                            <div class="drp hidden absolute top-[60px] -right-[170px] z-[15] bg-white text-black">
-                                <div class="pt-16 border-b-[1px] text-center">
-                                    <button class="px-24 py-2 bg-orange-300 border-[1px] border-black">Sign in</button>
-                                    <p class="text-sm py-4">New Customer <span class="text-blue-500">Start
+                            <div
+                                class="drp_h hidden absolute top-[65px] -left-[190px] z-20 w-[425px] bg-white text-black rounded border-[1px]">
+                                <div
+                                    class="absolute -top-[6px] right-[100px] z-30 w-[10px] h-[10px] rotate-[225deg] bg-white border-[1px] border-gray-600 border-t-0 border-l-0">
+                                </div>
+                                <div class="pt-5 border-b-[1px] text-center">
+                                    <button
+                                        class="px-16 py-1 text-sm bg-orange-300 border-[1px] border-gray-500 rounded">Sign
+                                        in</button>
+                                    <p class="text-xs py-1">New Customer <span class="text-blue-500">Start
                                             here.</span></p>
                                 </div>
-                                <div class="flex text-start pt-16 pb-8 px-6">
-                                    <div class="pr-8 text-gray-500 w-64">
+                                <div class="flex text-start pt-4 pb-4 px-6">
+                                    <div class="pr-6 pt-6 w-64">
                                         <ul>
-                                            <li><a href="" class="font-bold text-black">Your Lists</a></li>
-                                            <li><a href="">Create a List</a></li>
-                                            <li><a href="">Find&nbsp;a&nbsp;List&nbsp;or&nbsp;Registery</a></li>
+                                            <li><a href="" class="pb-4 font-bold text-black">Your Lists</a></li>
+                                            <li class=""><a href="" class="text-sm text-gray-500">Create a List</a></li>
+                                            <li class=""><a href=""
+                                                    class="text-sm text-gray-500">Find&nbsp;a&nbsp;List&nbsp;or&nbsp;Registery</a>
+                                            </li>
                                         </ul>
                                     </div>
                                     <div class="pr-12 pt-6 pl-6 border-l-2 w-64">
                                         <ul>
-                                            <li><a href="" class="pb-3 font-bold text-black">Your Account</a></li>
+                                            <li><a href="" class="pb-4 font-bold text-black">Your Account</a></li>
                                             <li><a href=""
-                                                    class="pt-2 text-gray-500 hover:underline hover:text-orange-500">Account</a>
+                                                    class=" text-sm text-gray-500 hover:underline hover:text-orange-500">Account</a>
                                             </li>
                                             <li><a href=""
-                                                    class="pt-2 text-gray-500 hover:underline hover:text-orange-500">Orders</a>
+                                                    class=" text-sm text-gray-500 hover:underline hover:text-orange-500">Orders</a>
                                             </li>
                                             <li><a href=""
-                                                    class="pt-2 text-gray-500 hover:underline hover:text-orange-500">Recommendations</a>
+                                                    class=" text-sm text-gray-500 hover:underline hover:text-orange-500">Recommendations</a>
                                             </li>
                                             <li><a href=""
-                                                    class="pt-2 text-gray-500 hover:underline hover:text-orange-500">Browsing&nbsp;History</a>
+                                                    class=" text-sm text-gray-500 hover:underline hover:text-orange-500">Browsing&nbsp;History</a>
                                             </li>
                                             <li><a href=""
-                                                    class="pt-2 text-gray-500 hover:underline hover:text-orange-500">Watchlist</a>
+                                                    class=" text-sm text-gray-500 hover:underline hover:text-orange-500">Watchlist</a>
                                             </li>
                                             <li><a href=""
-                                                    class="pt-2 text-gray-500 hover:underline hover:text-orange-500">Video&nbsp;Purchases&nbsp;and&nbsp;Rental</a>
+                                                    class=" text-sm text-gray-500 hover:underline hover:text-orange-500">Video&nbsp;Purchases&nbsp;and&nbsp;Rental</a>
                                             </li>
                                             <li><a href=""
-                                                    class="pt-2 text-gray-500 hover:underline hover:text-orange-500">Kindle&nbsp;Unlimited</a>
+                                                    class=" text-sm text-gray-500 hover:underline hover:text-orange-500">Kindle&nbsp;Unlimited</a>
                                             </li>
                                             <li><a href=""
-                                                    class="pt-2 text-gray-500 hover:underline hover:text-orange-500">Content&nbsp;and&nbsp;Devices</a>
+                                                    class=" text-sm text-gray-500 hover:underline hover:text-orange-500">Content&nbsp;and&nbsp;Devices</a>
                                             </li>
                                             <li><a href=""
-                                                    class="pt-2 text-gray-500 hover:underline hover:text-orange-500">Subscribe&nbsp;and&nbsp;save&nbsp;Items</a>
+                                                    class=" text-sm text-gray-500 hover:underline hover:text-orange-500">Subscribe&nbsp;and&nbsp;save&nbsp;Items</a>
                                             </li>
                                             <li><a href=""
-                                                    class="pt-2 text-gray-500 hover:underline hover:text-orange-500">Membership&nbsp;and&nbsp;subscriptions</a>
+                                                    class=" text-sm text-gray-500 hover:underline hover:text-orange-500">Membership&nbsp;and&nbsp;subscriptions</a>
                                             </li>
                                             <li><a href=""
-                                                    class="pt-2 text-gray-500 hover:underline hover:text-orange-500">Music&nbsp;Library</a>
+                                                    class=" text-sm text-gray-500 hover:underline hover:text-orange-500">Music&nbsp;Library</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -310,165 +388,175 @@
                             </div>
                         </div>
                         <div
-                            class="hidden lg:block p-2 text-white lg:border-transparent lg:border-[1px] lg:hover:border-white lg:hover:border-[1px]">
-                            <a href="">
+                            class="hidden lg:block p-2 text-white lg:border-transparent lg:border-[1px] leading-none lg:hover:border-white lg:hover:border-[1px]">
+                            <a href="" class="text-sm">
                                 <span class="text-gray-50 text-xs font-semibold">Returns<br></span>
-                                <span class="font-semibold text-sm xl:text-base">&&nbsp;Orders</span>
+                                <span class="font-bold text-sm xl:text-base">&&nbsp;Orders</span>
                             </a>
                         </div>
                         <div
                             class="block lg:hidden p-[6px] xl:p-3 relative lg:border-transparent lg:border-[1px] lg:hover:border-white lg:hover:border-[1px]">
-                            <a href="" class="text-white text-sm font-semibold">Sign in<i
-                                    class="fa-solid fa-angle-right text-[10px] pl-1"></i></a>
+                            <a href="" class="text-gray-200 text-sm font-semibold">Sign in<i
+                                    class="fa-solid fa-angle-right text-[10px] ml-1"></i></a>
                         </div>
                         <div
                             class="block lg:hidden p-[6px] xl:p-3 relative lg:border-transparent lg:border-[1px] lg:hover:border-white lg:hover:border-[1px]">
-                            <a href="" class="text-white"><i class="fa-regular fa-user text-[28px]"></i>
-                            </a>
+                            <button class="text-white"><i class="fa-regular fa-user text-3xl"></i>
+                            </button>
                         </div>
                         <div
-                            class="p-[6px] xl:p-3 relative lg:border-transparent lg:border-[1px] lg:hover:border-white lg:hover:border-[1px]">
-                            <button class="text-white"><i
-                                    class="fa-solid fa-cart-shopping w-[34px] h-[34px] xl:w-[68px] xl:h-[35px] "></i>
+                            class="xl:pt-3 relative lg:border-transparent lg:border-[1px] lg:hover:border-white lg:hover:border-[1px]">
+                            <button class="text-white p-[6px]"><i class="fa-solid fa-cart-shopping text-[32px] "></i>
                                 <span
-                                    class="absolute top-[1px] left-5 text-xl text-orange-400 font-bold">0</span></button>
+                                    class="absolute top-[1px] left-[21px] text-xl text-orange-400 font-bold">0</span></button>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- navbar second row options -->
-            <div class="bg-gray-700 lg:bg-gray-800 h-12 lg:px-5">
-                <div class="hidden lg:flex justify-between items-center">
+            <div class="bg-gray-700 lg:bg-gray-800 h-[38px] px-2">
+                <div class="hidden lg:flex justify-between items-center h-[38px]">
                     <div>
-                        <ul class="flex text-white">
+                        <ul class="flex text-white h-[38px]">
                             <li
-                                class="p-[6px] drp_icon relative xl:p-3 lg:border-transparent lg:border-[1px] lg:hover:border-white lg:hover:border-[1px]">
-                                <a href="#"><i class="fa-solid fa-bars"></i> All</a>
-                                <div class="drp hidden absolute top-[-60px] -left-5 z-10 w-[350px] bg-white text-black">
-                                    <button class="drp absolute top-[14px] -right-[35px]"><i
-                                            class="fa-solid fa-x fa-2xl text-black"></i></button>
+                                class="py-[6px] px-[6px] xl:px-3 xl:py-[6px] drp_icon relative lg:border-transparent lg:border-[1px] lg:hover:border-white lg:hover:border-[1px]">
+                                <a href="#" class="btn-open font-medium text-[15px]"><i
+                                        class="fa-solid fa-bars text-[15px]"></i> All</a>
+                                        <!-- navbar second row sidebar -->
+                                        <!-- <div class="drp  fixed -top-[66px] bottom-0 z-[45] w-[1178px] h-[1100px] bg-gray-800 opacity-50">
+                                        </div> -->
+                                <div id="cross"
+                                    class=" fixed top-0 -left-[30rem] z-50 w-[380px] h-screen bg-white text-black duration-500">
+                                    <button class="btn-close absolute top-[52px] -right-[100px] z-40"><i
+                                            class="fa-solid fa-x fa-2xl text-white"></i></button>
                                     <div class=" bg-gray-600 flex justify-evenly pr-10 pl-3 py-3">
                                         <span
                                             class="w-8 h-8 text-start bg-white rounded-full flex justify-center items-center"><i
                                                 class=" fa-solid fa-user-tie text-gray-600"></i></span>
                                         <p class="font-bold text-xl text-white">Hello, sign in</p>
                                     </div>
-                                    <div class="border-b-[1px]">
-                                        <p class="text-xl font-semibold pl-3 py-4">Digital Content & Devices</p>
-                                        <ul>
-                                            <li class="flex justify-between pl-3 py-4">
-                                                <a href="">Amazon Music</a>
-                                                <span><i class="fa-solid fa-chevron-right"></i></span>
-                                            </li>
-                                            <li class="flex justify-between pl-3 py-4">
-                                                <a href="">Kindle E-readers & Books</a>
-                                                <span><i class="fa-solid fa-chevron-right"></i></span>
-                                            </li>
-                                            <li class="flex justify-between pl-3 py-4">
-                                                <a href="">Amazon Appstore</a>
-                                                <span><i class="fa-solid fa-chevron-right"></i></span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="border-b-[1px]">
-                                        <p class="text-xl font-semibold pl-3 py-4">Shop By Department</p>
-                                        <ul>
-                                            <li class="flex justify-between pl-3 py-4">
-                                                <a href="">Electronic</a>
-                                                <span><i class="fa-solid fa-chevron-right"></i></span>
-                                            </li>
-                                            <li class="flex justify-between pl-3 py-4">
-                                                <a href="">Computers</a>
-                                                <span><i class="fa-solid fa-chevron-right"></i></span>
-                                            </li>
-                                            <li class="flex justify-between pl-3 py-4">
-                                                <a href="">Smart Home</a>
-                                                <span><i class="fa-solid fa-chevron-right"></i></span>
-                                            </li>
-                                            <li class="flex justify-between pl-3 py-4">
-                                                <a href="">Art & Crafts</a>
-                                                <span><i class="fa-solid fa-chevron-right"></i></span>
-                                            </li>
-                                            <li class="flex justify-between pl-3 py-4">
-                                                <a href="">See All</a>
-                                                <span><i class="fa-solid fa-chevron-right"></i></span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="border-b-[1px]">
-                                        <p class="text-xl font-semibold pl-3 py-4">Programs & Features</p>
-                                        <ul>
-                                            <li class="flex justify-between pl-3 py-4">
-                                                <a href="">Gift Cards</a>
-                                                <span><i class="fa-solid fa-chevron-right"></i></span>
-                                            </li>
-                                            <li class="flex justify-between pl-3 py-4">
-                                                <a href="">#FoundItOnAmazon</a>
-                                                <span><i class="fa-solid fa-chevron-right"></i></span>
-                                            </li>
-                                            <li class="flex justify-between pl-3 py-4">
-                                                <a href="">Amazon Live</a>
-                                                <span><i class="fa-solid fa-chevron-right"></i></span>
-                                            </li>
-                                            <li class="flex justify-between pl-3 py-4">
-                                                <a href="">International Shopping</a>
-                                                <span><i class="fa-solid fa-chevron-right"></i></span>
-                                            </li>
-                                            <li class="flex justify-between pl-3 py-4"><a href="">See All</a>
-                                                <span><i class="fa-solid fa-chevron-right"></i></span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div>
-                                        <p class="text-xl font-semibold pl-3 py-4">Help & Settings</p>
-                                        <ul>
-                                            <li class="flex justify-between pl-3 py-4"><a href="">your account</a></li>
-                                            <li class="flex justify-between pl-3 py-4"><a href=""><i
-                                                        class="fa-solid fa-globe"></i>English</a></li>
-                                            <li class="flex justify-between pl-3 py-4"><a href="">United States</a></li>
-                                            <li class="flex justify-between pl-3 py-4"><a href="">Customer Service</a>
-                                            </li>
-                                            <li class="flex justify-between pl-3 py-4"><a href="">Sign in</a></li>
-                                        </ul>
+                                    <div class="px-5 h-screen overflow-auto">
+                                        <div class="border-b-[1px]">
+                                            <p class="text-xl font-semibold pl-3 py-4">Digital Content & Devices</p>
+                                            <ul>
+                                                <li class="flex justify-between px-3 py-4">
+                                                    <a href="#">Amazon Music</a>
+                                                    <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                                                </li>
+                                                <li class="flex justify-between px-3 py-4">
+                                                    <a href="">Kindle E-readers & Books</a>
+                                                    <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                                                </li>
+                                                <li class="flex justify-between px-3 py-4">
+                                                    <a href="">Amazon Appstore</a>
+                                                    <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="border-b-[1px]">
+                                            <p class="text-xl font-semibold px-3 py-4">Shop By Department</p>
+                                            <ul>
+                                                <li class="flex justify-between px-3 py-4">
+                                                    <a href="">Electronic</a>
+                                                    <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                                                </li>
+                                                <li class="flex justify-between px-3 py-4">
+                                                    <a href="">Computers</a>
+                                                    <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                                                </li>
+                                                <li class="flex justify-between px-3 py-4">
+                                                    <a href="">Smart Home</a>
+                                                    <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                                                </li>
+                                                <li class="flex justify-between px-3 py-4">
+                                                    <a href="">Art & Crafts</a>
+                                                    <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                                                </li>
+                                                <li class="flex justify-between px-3 py-4">
+                                                    <a href="">See All</a>
+                                                    <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="border-b-[1px]">
+                                            <p class="text-xl font-semibold px-3 py-4">Programs & Features</p>
+                                            <ul>
+                                                <li class="flex justify-between px-3 py-4">
+                                                    <a href="">Gift Cards</a>
+                                                    <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                                                </li>
+                                                <li class="flex justify-between px-3 py-4">
+                                                    <a href="">#FoundItOnAmazon</a>
+                                                    <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                                                </li>
+                                                <li class="flex justify-between px-3 py-4">
+                                                    <a href="">Amazon Live</a>
+                                                    <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                                                </li>
+                                                <li class="flex justify-between px-3 py-4">
+                                                    <a href="">International Shopping</a>
+                                                    <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                                                </li>
+                                                <li class="flex justify-between px-3 py-4"><a href="">See All</a>
+                                                    <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <p class="text-xl font-semibold px-3 py-4">Help & Settings</p>
+                                            <ul>
+                                                <li class="flex justify-between px-3 py-4"><a href="">your account</a>
+                                                </li>
+                                                <li class="flex justify-between px-3 py-4"><a href=""><i
+                                                            class="fa-solid fa-globe"></i>English</a></li>
+                                                <li class="flex justify-between px-3 py-4"><a href="">United States</a>
+                                                </li>
+                                                <li class="flex justify-between px-3 py-4"><a href="">Customer
+                                                        Service</a>
+                                                </li>
+                                                <li class="flex justify-between px-3 py-4"><a href="">Sign in</a></li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </li>
                             <li
-                                class="p-[6px] xl:p-3 lg:border-transparent lg:border-[1px] lg:hover:border-white lg:hover:border-[1px]">
-                                <a href="">Today's Deals</a>
+                                class="py-[6px] px-[6px] xl:px-3 xl:py-[6px] xl:p-3 lg:border-transparent lg:border-[1px] lg:hover:border-white lg:hover:border-[1px]">
+                                <a href="" class="font-medium text-sm">Today's Deals</a>
                             </li>
                             <li
-                                class="p-[6px] xl:p-3 lg:border-transparent lg:border-[1px] lg:hover:border-white lg:hover:border-[1px]">
-                                <a href="">Customer Service</a>
+                                class="py-[6px] px-[6px] xl:px-3 xl:py-[6px] xl:p-3 lg:border-transparent lg:border-[1px] lg:hover:border-white lg:hover:border-[1px]">
+                                <a href="" class="font-medium text-sm">Customer Service</a>
                             </li>
                             <li
-                                class="p-[6px] xl:p-3 lg:border-transparent lg:border-[1px] lg:hover:border-white lg:hover:border-[1px]">
-                                <a href="">Registry</a>
+                                class="py-[6px] px-[6px] xl:px-3 xl:py-[6px] xl:p-3 lg:border-transparent lg:border-[1px] lg:hover:border-white lg:hover:border-[1px]">
+                                <a href="" class="font-medium text-sm">Registry</a>
                             </li>
                             <li
-                                class="p-[6px] xl:p-3 lg:border-transparent lg:border-[1px] lg:hover:border-white lg:hover:border-[1px]">
-                                <a href="">Gift Cards</a>
+                                class="py-[6px] px-[6px] xl:px-3 xl:py-[6px] xl:p-3 lg:border-transparent lg:border-[1px] lg:hover:border-white lg:hover:border-[1px]">
+                                <a href="" class="font-medium text-sm">Gift Cards</a>
                             </li>
                             <li
-                                class="p-[6px] xl:p-3 lg:border-transparent lg:border-[1px] lg:hover:border-white lg:hover:border-[1px]">
-                                <a href="">Sell</a>
+                                class="py-[6px] px-[6px] xl:px-3 xl:py-[6px] xl:p-3 lg:border-transparent lg:border-[1px] lg:hover:border-white lg:hover:border-[1px]">
+                                <a href="" class="font-medium text-sm">Sell</a>
                             </li>
                         </ul>
                     </div>
                     <div>
                         <a href=""
-                            class="p-[6px] xl:p-3 text-white lg:border-transparent lg:border-[1px] lg:hover:border-white lg:hover:border-[1px]">Shop&nbsp;great&nbsp;deals&nbsp;now</a>
+                            class="py-[6px] px-[6px] xl:px-3 xl:py-[6px] xl:p-3 text-white text-sm font-medium lg:border-transparent lg:border-[1px] lg:hover:border-white lg:hover:border-[1px]">Shop&nbsp;great&nbsp;deals&nbsp;now</a>
                     </div>
                 </div>
 
-                <!-- Deliver to Pakistan  -->
-                <div class="block lg:hidden bg-gray-800 p-[14px]">
-                    <span class=""><span class="text-white text-base font-medium xl:text-sm text-end"><i
-                                class="fa-solid fa-location-dot pr-2"></i>Deliver to Pakistan</span>
-                    </span>
-                </div>
+            </div>
+            <!-- navbar 3rd row options : max-991.5px >> deliver to pakistan -->
+            <div class="block lg:hidden bg-gray-800 p-[14px]">
+                <span class=""><span class="text-white text-base font-medium xl:text-sm text-end"><i
+                            class="fa-solid fa-location-dot pr-2"></i>Deliver to Pakistan</span>
+                </span>
             </div>
         </nav>
+
     </header>
 
     <!-- product's carousel -->
@@ -895,7 +983,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- carousel prev button -->
                 <button class="product_prev absolute top-16 left-2 z-10 px-3 py-2 bg-white rounded-md"><i
                         class="fa-solid fa-chevron-left text-base text-gray-500"></i></button>
@@ -909,119 +996,164 @@
     <section class="hidden lg:block mx-4 mt-7 mb-16">
         <div class="">
             <div class="grid grid-cols-12 border-t-[1px] border-r-[1px] border-gray-200">
-                <div class="col-span-2">
+                <div class="lg:col-span-2 2xl:col-span-1">
                     <div>
-                        <ul>
-                            <li class="mt-1"><a href="" class="font-bold text-green-800">All Deals</a></li>
-                            <li class="mt-1"><a href="" class="font-semibold text-green-600">Available</a></li>
-                            <li class="mt-1"><a href="" class="font-semibold text-green-600">Upcoming</a></li>
-                            <li class="mt-1"><a href="" class="font-semibold text-green-600">Watchlist</a></li>
+                        <ul class="mb-5 mt-6">
+                            <li class="leading-none"><a href="" class="font-bold text-sm text-[#007185] hover:text-[#C7511F] hover:underline">All Deals</a></li>
+                            <li class="leading-none"><a href="" class=" text-sm text-[#007185] hover:text-[#C7511F] hover:underline">Available</a></li>
+                            <li class="leading-none"><a href="" class=" text-sm text-[#007185] hover:text-[#C7511F] hover:underline">Upcoming</a></li>
+                            <li class="leading-none"><a href="" class=" text-sm text-[#007185] hover:text-[#C7511F] hover:underline">Watchlist</a></li>
                         </ul>
                     </div>
-                    <div>
-                        <p class="font-bold">Prime programs</p>
+                    <div class="mb-4">
+                        <h3 class="font-semibold text-lg">Prime programs</h3>
                         <ul>
                             <li>
-                                <input type="checkbox"><label for=""><i
+                                <input type="checkbox" id=""><label for="prime" class="ml-1 text-sm"><i
                                         class="fa-solid fa-check text-yellow-400"></i><span
-                                        class="font-semibold text-blue-600">prime</span></label>
+                                        class="font-bold text-blue-400">prime</span></label>
                             </li>
                             <li>
-                                <input type="checkbox"><label for="">Prime Early access deals</label>
+                                <input type="checkbox" id="deals"><label for="deals" class="ml-1 text-sm">Prime Early access deals</label>
                             </li>
                             <li>
-                                <input type="checkbox"><label for="">Prime Exclusive deals</label>
+                                <input type="checkbox" id="Exclusive"><label for="Exclusive" class="ml-1 text-sm">Prime Exclusive deals</label>
                             </li>
                         </ul>
                     </div>
                     <div>
-                        <p class="font-bold">Departements</p>
-                        <ul>
+                        <h3 class="font-semibold text-lg mb-1">Departements</h3>
+                        <ul class="">
                             <li>
-                                <input type="checkbox"><label for="">Select All</label>
+                                <a href="#"  class="text-[15px] text-blue-500 hover:text-orange-500 hover:underline">Clear</a>
                             </li>
                             <li>
-                                <input type="checkbox"><label for="">Amazon Devices</label>
+                                <input type="checkbox" id="input1"><label class="cursor-pointer text-sm ml-1" for="input1">Select All</label>
                             </li>
                             <li>
-                                <input type="checkbox"><label for="">Arts, Crafts & Sewing</label>
+                                <input type="checkbox" id="input2"><label class="cursor-pointer text-sm ml-1" for="input2">Amazon Devices</label>
                             </li>
                             <li>
-                                <input type="checkbox"><label for="">Automotive & Motorcycle</label>
+                                <input type="checkbox" id="input3"><label class="cursor-pointer text-sm ml-1" for="input3">Arts, Crafts & Sewing</label>
                             </li>
                             <li>
-                                <input type="checkbox"><label for="">Baby</label>
+                                <input type="checkbox" id="input4"><label class="cursor-pointer text-sm ml-1" for="input4">Automotive & Motorcycle</label>
                             </li>
                             <li>
-                                <input type="checkbox"><label for="">Baby Clothing & Accessories</label>
+                                <input type="checkbox" id="input5"><label class="cursor-pointer text-sm ml-1" for="input5">Baby</label>
                             </li>
                             <li>
-                                <input type="checkbox"><label for="">Beauty</label>
+                                <input type="checkbox" id="input6"><label class="cursor-pointer text-sm ml-1" for="input6">Baby Clothing & Accessories</label>
                             </li>
                             <li>
-                                <input type="checkbox"><label for="">Books</label>
+                                <input type="checkbox" id="input7"><label class="cursor-pointer text-sm ml-1" for="input7">Beauty</label>
                             </li>
                             <li>
-                                <input type="checkbox"><label for="">Boys' Fashion</label>
+                                <input type="checkbox" id="input8"><label class="cursor-pointer text-sm ml-1" for="input8">Books</label>
                             </li>
                             <li>
-                                <input type="checkbox"><label for="">Camera & Photo</label>
+                                <input type="checkbox" id="input9"><label class="cursor-pointer text-sm ml-1" for="input9">Boys' Fashion</label>
                             </li>
                             <li>
-                                <input type="checkbox"><label for="">Cell Phones & Accessories</label>
+                                <input type="checkbox" id="input10"><label class="cursor-pointer text-sm ml-1" for="input10">Camera & Photo</label>
                             </li>
                             <li>
-                                <input type="checkbox"><label for="">Computers & Accessories</label>
+                                <input type="checkbox" id="input11"><label class="cursor-pointer text-sm ml-1" for="input11">Cell Phones & Accessories</label>
                             </li>
                             <li>
-                                <input type="checkbox"><label for=""></label>
+                                <input type="checkbox" id="input12"><label class="cursor-pointer text-sm ml-1" for="input12">Computers & Accessories</label>
+                            </li>
+                            <!-- <li>
+                                <input type="checkbox" id="input13"><label class="cursor-pointer text-sm ml-1" for="input13"></label>
+                            </li> -->
+                            <li>
+                                <input type="checkbox" id="input14"><label class="cursor-pointer text-sm ml-1" for="input14">Electronics</label>
                             </li>
                             <li>
-                                <input type="checkbox"><label for="">Electronics</label>
+                                <input type="checkbox" id="input15"><label class="cursor-pointer text-sm ml-1" for="input15">Fashion</label>
                             </li>
                             <li>
-                                <input type="checkbox"><label for="">Fashion</label>
+                                <input type="checkbox" id="input16"><label class="cursor-pointer text-sm ml-1" for="input16">Furniture</label>
                             </li>
                             <li>
-                                <input type="checkbox"><label for="">Furniture</label>
+                                <input type="checkbox" id="input17"><label class="cursor-pointer text-sm ml-1" for="input17">Girls' Fashion</label>
                             </li>
                             <li>
-                                <input type="checkbox"><label for="">Girls' Fashion</label>
+                                <input type="checkbox" id="input18"><label class="cursor-pointer text-sm ml-1" for="input18">Grocery</label>
                             </li>
                             <li>
-                                <input type="checkbox"><label for="">Grocery</label>
+                                <input type="checkbox" id="input19"><label class="cursor-pointer text-sm ml-1" for="input19">Handmade</label>
                             </li>
                             <li>
-                                <input type="checkbox"><label for="">Handmade</label>
+                                <input type="checkbox" id="input20"><label class="cursor-pointer text-sm ml-1" for="input20">Headphones</label>
                             </li>
                             <li>
-                                <input type="checkbox"><label for="">Headphones</label>
+                                <input type="checkbox" id="input21"><label class="cursor-pointer text-sm ml-1" for="input21">Health & Personal Care</label>
                             </li>
                             <li>
-                                <input type="checkbox"><label for="">Health & Personal Care</label>
+                                <input type="checkbox" id="input22"><label class="cursor-pointer text-sm ml-1" for="input22">Home</label>
                             </li>
                             <li>
-                                <input type="checkbox"><label for="">Home</label>
+                                <input type="checkbox" id="input23"><label class="cursor-pointer text-sm ml-1" for="input23">Home Audio</label>
                             </li>
                             <li>
-                                <input type="checkbox"><label for="">Home Audio</label>
+                                <input type="checkbox" id="input24"><label class="cursor-pointer text-sm ml-1" for="input24">Home Improvement</label>
                             </li>
                             <li>
-                                <input type="checkbox"><label for="">Home Improvement</label>
-                            </li>
-                            <li>
-                                <input type="checkbox"><label for="">Industrial & Scientific</label>
+                                <input type="checkbox" id="input25"><label class="cursor-pointer text-sm ml-1" for="input25">Industrial & Scientific</label>
                             </li>
 
                         </ul>
                     </div>
+                    <div class="mt-6 mb-3">
+                        <h3 class="font-semibold text-lg my-1">Deal type</h3>
+                        <ul class="">
+                            <li class="leading-none"><a href="" class="font-bold text-sm text-[#007185] hover:text-[#C7511F] hover:underline">All Deals</a></li>
+                            <li class="leading-none"><a href="" class=" text-sm text-[#007185] hover:text-[#C7511F] hover:underline ">Top Deal</a></li>
+                            <li class="leading-none"><a href="" class=" text-sm text-[#007185] hover:text-[#C7511F] hover:underline ">Lightning deal</a></li>
+                            <li class="leading-none"><a href="" class=" text-sm text-[#007185] hover:text-[#C7511F] hover:underline ">Best deal</a></li>
+                        </ul>
+                    </div>
+                    <div class="mt-6 mb-3">
+                        <h3 class="font-semibold text-lg my-1">Price</h3>
+                        
+                        <ul class="">
+                            <li class="leading-none"><a href="" class="font-bold text-sm text-[#007185] hover:text-[#C7511F] hover:underline">All</a></li>
+                            <li class="leading-none"><a href="" class="text-sm text-[#007185] hover:text-[#C7511F] hover:underline">Under $25</a></li>
+                            <li class="leading-none"><a href="" class="text-sm text-[#007185] hover:text-[#C7511F] hover:underline">$25 to $50</a></li>
+                            <li class="leading-none"><a href="" class=" text-sm text-[#007185] hover:text-[#C7511F] hover:underline">$50 to $100</a></li>
+                            <li class="leading-none"><a href="" class=" text-sm text-[#007185] hover:text-[#C7511F] hover:underline">$100 to $200</a></li>
+                            <li class="leading-none"><a href="" class=" text-sm text-[#007185] hover:text-[#C7511F] hover:underline">$200 & Above</a></li>
+                        </ul>
+                    </div>
+                    <div class="mt-6 mb-3">
+                        <h3 class="font-semibold text-lg my-1">Discount</h3>
+                        <ul class="">
+                            <li class="leading-none"><a href="" class="font-bold text-sm text-[#007185] hover:text-[#C7511F] hover:underline">All deals</a></li>
+                            <li class="leading-none"><a href="" class="text-sm text-[#007185] hover:text-[#C7511F] hover:underline">10% off or more</a></li>
+                            <li class="leading-none"><a href="" class="text-sm text-[#007185] hover:text-[#C7511F] hover:underline">25% off or more</a></li>
+                            <li class="leading-none"><a href="" class=" text-sm text-[#007185] hover:text-[#C7511F] hover:underline">$50 to $100</a></li>
+                            <li class="leading-none"><a href="" class=" text-sm text-[#007185] hover:text-[#C7511F] hover:underline">50% off or more</a></li>
+                            <li class="leading-none"><a href="" class=" text-sm text-[#007185] hover:text-[#C7511F] hover:underline">70% off or more</a></li>
+                        </ul>
+                    </div>
+                    <div class="mt-6 mb-5">
+                        <h3 class="font-semibold text-lg my-2">Average Customer Review</h3>
+                        <ul class="">
+                            <li class="leading-none"><a href="" class="text-sm text-[#C7511F]"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> <span class="text-[#007185] hover:text-[#C7511F] hover:underline">& up</span></a></li>
+                            <li class="leading-none"><a href="" class="text-sm text-[#C7511F]"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><span class="text-[#007185] hover:text-[#C7511F] hover:underline">& up</span></a></li>
+                            <li class="leading-none"><a href="" class=" text-sm text-[#C7511F]"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i> <span class="text-[#007185] hover:text-[#C7511F] hover:underline">& up</span></a></li>
+                            <li class="leading-none"><a href="" class=" text-sm text-[#C7511F]"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><span class="text-[#007185] hover:text-[#C7511F] hover:underline">& up</span></a></li>
+                            <li class="leading-none"><a href="" class=" text-sm text-[#C7511F]"><i class="fa fa-star" aria-hidden="true"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"><i class="fa-regular fa-star"></i></i> <span class="text-[#007185] hover:text-[#C7511F] hover:underline">& up</span></a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-span-10">
+                <div class="lg:col-span-10 2xl:col-span-11">
                     <div class="grid grid-cols-12">
-                        <div class="col-span-6 xl:col-span-4">
+                        <div class="col-span-6 xl:col-span-4 2xl:col-span-3 3xl:col-span-2 4xl:col-span-1">
                             <div class="border-[1px] border-gray-200 py-6 px-[18px]">
                                 <a href="../src/product_inspect.html">
-                                    <div class="h-48">
+                                    <div class="flex h-48">
                                         <img src="../dist/images/products/products_1.jpg" alt="" class="m-auto">
                                     </div>
                                     <div class="pt-12">
@@ -1039,8 +1171,8 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-span-6 xl:col-span-4">
-                            <div class="border-x-[1px] border-gray-200 py-6 px-[18px]">
+                        <div class="col-span-6 xl:col-span-4 2xl:col-span-3 3xl:col-span-2 4xl:col-span-1">
+                            <div class="border-[1px] border-gray-200 py-6 px-[18px]">
                                 <a href="">
                                     <div class="h-48">
                                         <img src="../dist/images/products/products_2.jpg" alt="" class="m-auto">
@@ -1060,8 +1192,8 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-span-6 xl:col-span-4">
-                            <div class="border-b-[1px] border-gray-200 py-6 px-[18px]">
+                        <div class="col-span-6 xl:col-span-4 2xl:col-span-3 3xl:col-span-2 4xl:col-span-1">
+                            <div class="border-[1px] border-gray-200 py-6 px-[18px]">
                                 <a href="">
                                     <div class="h-48">
                                         <img src="../dist/images/products/products_3.jpg" alt="" class="m-auto">
@@ -1079,7 +1211,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-span-6 xl:col-span-4">
+                        <div class="col-span-6 xl:col-span-4 2xl:col-span-3 3xl:col-span-2 4xl:col-span-1">
                             <div class="border-[1px] border-t-[1px] border-gray-200 py-6 px-[18px]">
                                 <a href="">
                                     <div class="h-48">
@@ -1099,7 +1231,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-span-6 xl:col-span-4">
+                        <div class="col-span-6 xl:col-span-4 2xl:col-span-3 3xl:col-span-2 4xl:col-span-1">
                             <div class="border-[1px] border-gray-200 py-6 px-[18px]">
                                 <a href="">
                                     <div class="h-48">
@@ -1120,8 +1252,8 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-span-6 xl:col-span-4">
-                            <div class="border-b-[1px] border-gray-200 py-6 px-[18px]">
+                        <div class="col-span-6 xl:col-span-4 2xl:col-span-3 3xl:col-span-2 4xl:col-span-1">
+                            <div class="border-[1px] border-gray-200 py-6 px-[18px]">
                                 <a href="">
                                     <div class="h-48">
                                         <img src="../dist/images/products/products_6.jpg" alt="" class="m-auto">
@@ -1141,7 +1273,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-span-6 xl:col-span-4">
+                        <div class="col-span-6 xl:col-span-4 2xl:col-span-3 3xl:col-span-2 4xl:col-span-1">
                             <div class="border-[1px] border-gray-200 py-6 px-[18px]">
                                 <a href="">
                                     <div class="h-48">
@@ -1162,8 +1294,8 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-span-6 xl:col-span-4">
-                            <div class="border-b-[1px] border-gray-200 py-6 px-[18px]">
+                        <div class="col-span-6 xl:col-span-4 2xl:col-span-3 3xl:col-span-2 4xl:col-span-1">
+                            <div class="border-[1px] border-gray-200 py-6 px-[18px]">
                                 <a href="">
                                     <div class="h-48">
                                         <img src="../dist/images/products/products_8.jpg" alt="" class="m-auto">
@@ -1183,7 +1315,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-span-6 xl:col-span-4">
+                        <div class="col-span-6 xl:col-span-4 2xl:col-span-3 3xl:col-span-2 4xl:col-span-1">
                             <div class="border-[1px] border-gray-200 py-6 px-[18px]">
                                 <a href="">
                                     <div class="h-48">
@@ -1204,7 +1336,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-span-6 xl:col-span-4">
+                        <div class="col-span-6 xl:col-span-4 2xl:col-span-3 3xl:col-span-2 4xl:col-span-1">
                             <div class="border-[1px] border-gray-200 py-6 px-[18px]">
                                 <a href="">
                                     <div class="h-48">
@@ -1225,7 +1357,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-span-6 xl:col-span-4">
+                        <div class="col-span-6 xl:col-span-4 2xl:col-span-3 3xl:col-span-2 4xl:col-span-1">
                             <div class="border-[1px] border-gray-200 py-6 px-[18px]">
                                 <a href="">
                                     <div class="h-48">
@@ -1246,8 +1378,8 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-span-6 xl:col-span-4">
-                            <div class="border-[1px] border-t-[1px] border-gray-200 py-6 px-[18px]">
+                        <div class="col-span-6 xl:col-span-4 2xl:col-span-3 3xl:col-span-2 4xl:col-span-1">
+                            <div class="border-[1px] border-gray-200 py-6 px-[18px]">
                                 <a href="">
                                     <div class="h-48">
                                         <img src="../dist/images/products/products_12.jpg" alt="" class="m-auto">
@@ -1267,8 +1399,8 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-span-6 xl:col-span-4">
-                            <div class="border-x-[1px] border-t-[1px] border-gray-200 py-6 px-[18px]">
+                        <div class="col-span-6 xl:col-span-4 2xl:col-span-3 3xl:col-span-2 4xl:col-span-1">
+                            <div class="border-[1px] border-gray-200 py-6 px-[18px]">
                                 <a href="">
                                     <div class="h-48">
                                         <img src="../dist/images/products/products_13.jpg" alt="" class="m-auto">
@@ -1288,8 +1420,8 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-span-6 xl:col-span-4">
-                            <div class="border-y-[1px] border-gray-200 py-6 px-[18px]">
+                        <div class="col-span-6 xl:col-span-4 2xl:col-span-3 3xl:col-span-2 4xl:col-span-1">
+                            <div class="border-[1px] border-gray-200 py-6 px-[18px]">
                                 <a href="">
                                     <div class="h-48">
                                         <img src="../dist/images/products/products_14.jpg" alt="" class="m-auto">
@@ -1309,8 +1441,8 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-span-6 xl:col-span-4">
-                            <div class="border-[1px] border-t-[1px] border-gray-200 py-6 px-[18px]">
+                        <div class="col-span-6 xl:col-span-4 2xl:col-span-3 3xl:col-span-2 4xl:col-span-1">
+                            <div class="border-[1px] border-gray-200 py-6 px-[18px]">
                                 <a href="">
                                     <div class="h-48">
                                         <img src="../dist/images/products/products_15.jpg" alt="" class="m-auto">
@@ -1330,7 +1462,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-span-6 xl:col-span-4">
+                        <div class="col-span-6 xl:col-span-4 2xl:col-span-3 3xl:col-span-2 4xl:col-span-1">
                             <div class="border-[1px] border-gray-200 py-6 px-[18px]">
                                 <a href="">
                                     <div class="h-48">
@@ -1351,8 +1483,8 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-span-6 xl:col-span-4">
-                            <div class="border-b-[1px] border-gray-200 py-6 px-[18px]">
+                        <div class="col-span-6 xl:col-span-4 2xl:col-span-3 3xl:col-span-2 4xl:col-span-1">
+                            <div class="border-[1px] border-gray-200 py-6 px-[18px]">
                                 <a href="">
                                     <div class="h-48">
                                         <img src="../dist/images/products/products_17.jpg" alt="" class="m-auto">
@@ -1372,8 +1504,8 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-span-6 xl:col-span-4">
-                            <div class="border-[1px] border-t-[1px] border-gray-200 py-6 px-[18px]">
+                        <div class="col-span-6 xl:col-span-4 2xl:col-span-3 3xl:col-span-2 4xl:col-span-1">
+                            <div class="border-[1px] border-gray-200 py-6 px-[18px]">
                                 <a href="">
                                     <div class="h-48">
                                         <img src="../dist/images/products/products_18.jpg" alt="" class="m-auto">
@@ -1393,8 +1525,8 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-span-6 xl:col-span-4">
-                            <div class="border-x-[1px] border-gray-200 py-6 px-[18px]">
+                        <div class="col-span-6 xl:col-span-4 2xl:col-span-3 3xl:col-span-2 4xl:col-span-1">
+                            <div class="border-[1px] border-gray-200 py-6 px-[18px]">
                                 <a href="">
                                     <div class="h-48">
                                         <img src="../dist/images/products/products_19.jpg" alt="" class="m-auto">
@@ -1414,8 +1546,8 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-span-6 xl:col-span-4">
-                            <div class="border-b-[1px] border-gray-200 py-6 px-[18px]">
+                        <div class="col-span-6 xl:col-span-4 2xl:col-span-3 3xl:col-span-2 4xl:col-span-1">
+                            <div class="border-[1px] border-gray-200 py-6 px-[18px]">
                                 <a href="">
                                     <div class="h-48">
                                         <img src="../dist/images/products/products_20.jpg" alt="" class="m-auto">
@@ -1435,8 +1567,8 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-span-6 xl:col-span-4">
-                            <div class="border-[1px] border-t-[1px] border-gray-200 py-6 px-[18px]">
+                        <div class="col-span-6 xl:col-span-4 2xl:col-span-3 3xl:col-span-2 4xl:col-span-1">
+                            <div class="border-[1px] border-gray-200 py-6 px-[18px]">
                                 <a href="">
                                     <div class="h-48">
                                         <img src="../dist/images/products/products_21.jpg" alt="" class="m-auto">
@@ -1456,8 +1588,8 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-span-6 xl:col-span-4">
-                            <div class="border-[1px] border-t-[1px] border-gray-200 py-6 px-[18px]">
+                        <div class="col-span-6 xl:col-span-4 2xl:col-span-3 3xl:col-span-2 4xl:col-span-1">
+                            <div class="border-[1px] border-gray-200 py-6 px-[18px]">
                                 <a href="">
                                     <div class="h-48">
                                         <img src="../dist/images/products/products_22.jpg" alt="" class="m-auto">
@@ -1477,8 +1609,8 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-span-6 xl:col-span-4">
-                            <div class="border-x-[1px] border-gray-200 py-6 px-[18px]">
+                        <div class="col-span-6 xl:col-span-4 2xl:col-span-3 3xl:col-span-2 4xl:col-span-1">
+                            <div class="border-[1px] border-gray-200 py-6 px-[18px]">
                                 <a href="">
                                     <div class="h-48">
                                         <img src="../dist/images/products/products_23.jpg" alt="" class="m-auto">
@@ -1498,8 +1630,8 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-span-6 xl:col-span-4">
-                            <div class="border-y-[1px] border-gray-200 py-6 px-[18px]">
+                        <div class="col-span-6 xl:col-span-4 2xl:col-span-3 3xl:col-span-2 4xl:col-span-1">
+                            <div class="border-[1px] border-gray-200 py-6 px-[18px]">
                                 <a href="">
                                     <div class="h-48">
                                         <img src="../dist/images/products/products_24.jpg" alt="" class="m-auto">
@@ -1519,8 +1651,8 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-span-6 xl:col-span-4">
-                            <div class="border-[1px] border-t-[1px] border-gray-200 py-6 px-[18px]">
+                        <div class="col-span-6 xl:col-span-4 2xl:col-span-3 3xl:col-span-2 4xl:col-span-1">
+                            <div class="border-[1px] border-gray-200 py-6 px-[18px]">
                                 <a href="">
                                     <div class="h-48">
                                         <img src="../dist/images/products/products_25.jpg" alt="" class="m-auto">
@@ -1540,8 +1672,8 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-span-6 xl:col-span-4">
-                            <div class="border-x-[1px] border-t-[1px] border-gray-200 py-6 px-[18px]">
+                        <div class="col-span-6 xl:col-span-4 2xl:col-span-3 3xl:col-span-2 4xl:col-span-1">
+                            <div class="border-[1px] border-gray-200 py-6 px-[18px]">
                                 <a href="">
                                     <div class="h-48">
                                         <img src="../dist/images/products/products_26.jpg" alt="" class="m-auto">
@@ -1561,8 +1693,8 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-span-6 xl:col-span-4">
-                            <div class="py-6 px-[18px]">
+                        <div class="col-span-6 xl:col-span-4 2xl:col-span-3 3xl:col-span-2 4xl:col-span-1">
+                            <div class="border-[1px] border-gray-200 py-6 px-[18px]">
                                 <a href="">
                                     <div class="h-48">
                                         <img src="../dist/images/products/products_27.jpg" alt="" class="m-auto">
@@ -1582,7 +1714,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-span-6 xl:col-span-4">
+                        <div class="col-span-6 xl:col-span-4 2xl:col-span-3 3xl:col-span-2 4xl:col-span-1">
                             <div class="border-[1px] border-gray-200 py-6 px-[18px]">
                                 <a href="">
                                     <div class="h-48">
@@ -1603,8 +1735,8 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-span-6 xl:col-span-4">
-                            <div class="border-y-[1px] border-r-[1px] border-gray-200 py-6 px-[18px]">
+                        <div class="col-span-6 xl:col-span-4 2xl:col-span-3 3xl:col-span-2 4xl:col-span-1">
+                            <div class="border-[1px] border-gray-200 py-6 px-[18px]">
                                 <a href="">
                                     <div class="h-48">
                                         <img src="../dist/images/products/products_29.jpg" alt="" class="m-auto">
@@ -1624,8 +1756,8 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-span-6 xl:col-span-4">
-                            <div class="border-y-[1px] border-gray-200 py-6 px-[18px]">
+                        <div class="col-span-6 xl:col-span-4 2xl:col-span-3 3xl:col-span-2 4xl:col-span-1">
+                            <div class="border-[1px] border-gray-200 py-6 px-[18px]">
                                 <a href="">
                                     <div class="h-48">
                                         <img src="../dist/images/products/products_30.jpg" alt="" class="m-auto">
@@ -2752,7 +2884,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="/dist/js/script.js"></script>
+    <script src="../dist/js/script.js"></script>
 </body>
 
 </html>
